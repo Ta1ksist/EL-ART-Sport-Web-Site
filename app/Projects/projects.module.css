@@ -1,0 +1,250 @@
+.centerWrapper {
+  width: 100%;
+  max-width: 1600px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5rem; 
+  padding-bottom: 4rem;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-gray-dark, #707781);
+}
+
+.header {
+  display: grid;
+  gap: 2rem;
+  border-bottom: none !important; 
+  padding-bottom: 0 !important;
+}
+
+.mainTitle {
+  font-family: var(--font-main), sans-serif;
+  margin-top: 0.75rem; 
+  font-size: 2.75rem;
+  line-height: 1.1;
+  font-weight: 500;
+  color: var(--color-black, #212121);
+  letter-spacing: -0.01em;
+}
+
+.heroDesc {
+  max-width: 32rem; 
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--color-gray-dark, #707781);
+}
+
+.filtersContainer {
+  margin-top: 3rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.filterGroupLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-gray-dark, #707781);
+  margin-bottom: 1rem;
+}
+
+.filterButtonsRow {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  row-gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.filterBtn {
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+.activeFilterBtn {
+  color: var(--color-black, #212121);
+}
+
+.inactiveFilterBtn {
+  color: var(--color-gray-dark, #707781);
+}
+
+.filterBtn::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: currentColor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.filterBtn:hover::after,
+.activeFilterBtn::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.statusBar {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--color-gray-light, #dde2e9);
+  padding-top: 1.5rem;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: var(--color-gray-dark, #707781);
+}
+
+.clearFiltersBtn {
+  color: var(--color-black, #212121);
+  position: relative;
+}
+
+.clearFiltersBtn::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: currentColor;
+  transition: transform 0.25s ease;
+}
+
+.clearFiltersBtn:hover::after {
+  transform: scaleX(1);
+}
+
+.projectsGrid {
+  margin-top: 3rem;
+  display: grid;
+  gap: 4rem 1.5rem;
+}
+
+.projectCard {
+  display: block;
+}
+
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-gray-light, #dde2e9);
+  aspect-ratio: 4 / 5;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 1200ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.projectCard:hover .image {
+  transform: scale(1.04);
+}
+
+.metaInfo {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.metaTextContainer {
+  min-width: 0;
+}
+
+.styleLocation {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--color-gray-dark, #707781);
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.projectTitle {
+  font-family: var(--font-main), sans-serif;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-black, #212121);
+  margin-bottom: 0;
+}
+
+.year {
+  flex-shrink: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--color-gray-dark, #707781);
+  font-variant-numeric: tabular-nums;
+}
+
+.noResults {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.noResultsTitle {
+  font-family: var(--font-main), sans-serif;
+  font-size: 1.5rem;
+  color: var(--color-gray-dark, #707781);
+}
+
+@media (min-width: 768px) {
+  .centerWrapper {
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+  }
+
+  .header {
+    grid-template-columns: 1.1fr 1fr;
+    gap: 6rem;
+    align-items: baseline;
+  }
+
+  .mainTitle {
+    font-size: 4rem;
+  }
+
+   .heroDesc {
+    padding-top: 0 !important;
+  }
+
+  .filtersContainer {
+    margin-top: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .projectsGrid {
+    margin-top: 5rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 2.5rem;
+    row-gap: 6rem;
+  }
+
+  .gridLinkOdd {
+    margin-top: 4rem;
+  }
+
+  .projectTitle {
+    font-size: 1.875rem;
+  }
+}

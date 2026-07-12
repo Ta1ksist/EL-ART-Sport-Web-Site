@@ -1,0 +1,85 @@
+/* ОБЛОЖКА ПРОЕКТА (Hero Cover) */
+.coverSection {
+  position: relative;
+  margin-top: -5rem;
+  height: 85svh;
+  min-height: 600px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.coverImage {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.coverOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.65));
+  z-index: 2;
+}
+
+.centerWrapper {
+  width: 100%;
+  max-width: 1600px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.coverContent {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  padding-bottom: 4.5rem;
+  color: var(--color-white, #ffffff);
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.mainTitle {
+  font-family: var(--font-main), sans-serif;
+  margin-top: 1.25rem;
+  font-size: 2.75rem;
+  line-height: 1.05;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin-bottom: 0;
+}
+
+.coverLocation {
+  margin-top: 1.25rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+@media (min-width: 768px) {
+  .coverSection {
+    height: 100vh;
+    min-height: 750px;
+  }
+
+  .mainTitle {
+    font-size: 5.5rem; 
+    max-width: 1200px;
+  }
+
+  .coverContent {
+    padding-bottom: 6.5rem;
+  }
+}

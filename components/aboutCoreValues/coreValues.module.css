@@ -1,0 +1,75 @@
+.valuesSection {
+  width: 100%;
+  border-top: 1px solid var(--color-gray-light, #dde2e9);
+  border-bottom: 1px solid var(--color-gray-light, #dde2e9);
+  background-color: rgba(243, 244, 246, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.centerWrapper {
+  width: 100%;
+  max-width: 1600px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-gray-dark, #707781);
+}
+
+.valuesGrid {
+  margin-top: 2.5rem;
+  display: grid;
+  gap: 1px;
+  background-color: var(--color-gray-light, #dde2e9);
+}
+
+.valueCard {
+  background-color: var(--color-white, #ffffff);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.valueTitle {
+  font-family: var(--font-main), sans-serif;
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--color-black, #212121);
+  margin: 0;
+}
+
+.valueDesc {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-gray-dark, #707781);
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .valuesSection {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .valuesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .valueCard {
+    padding: 3rem;
+  }
+
+  .valueTitle {
+    font-size: 2rem;
+  }
+}

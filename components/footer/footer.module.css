@@ -1,0 +1,207 @@
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logoBlock {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 48px;
+}
+
+.byText {
+  font-family: inherit;
+  font-size: clamp(20px, 3vw, 40px);
+  font-weight: 300;
+  line-height: 1;
+  margin-left: 0.5%;
+  margin-bottom: -1%;
+}
+
+.elartText {
+  font-family: inherit;
+  font-size: clamp(60px, 17.5vw, 300px); 
+  font-weight: 400;
+  line-height: 0.85;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  width: 100%;
+  display: block;
+}
+
+.mainRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.navLink {
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 24px;
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+
+.navLink:hover {
+  opacity: 0.75;
+}
+
+.contactsBlock {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.email {
+  font-family: inherit;
+  font-size: 18px;
+  color: inherit;
+  text-decoration: underline;
+  transition: opacity 0.15s;
+}
+
+.email:hover {
+  opacity: 0.75;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.socialLink:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.12);
+  margin: 36px 0;
+  width: 100%;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.legalNav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 32px;
+}
+
+.legalLink {
+  font-family: inherit;
+  color: #b9bfc7;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 20px;
+  transition: color 0.15s;
+}
+
+.legalLink:hover {
+  color: #ffffff;
+}
+
+.devNav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 32px;
+}
+
+.devLink {
+  font-family: inherit;
+  color: #b9bfc7;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 20px;
+  transition: color 0.15s;
+}
+
+.devLink:hover {
+  color: #ffffff;
+}
+
+.copy {
+  font-family: inherit;
+  color: #707781;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+@media (max-width: 1024px) {
+  .mainRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 32px 16px;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .contactsBlock {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .legalNav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .copy {
+    padding-top: 16px;
+  }
+}

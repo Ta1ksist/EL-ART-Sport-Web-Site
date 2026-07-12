@@ -1,0 +1,82 @@
+.heroSection {
+  width: 100%;
+  border-top: none !important;
+  margin-top: 0 !important;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroCenterWrapper {
+  width: 100%;
+  max-width: 1600px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.heroGrid {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+  border-bottom: 1px solid var(--color-gray-light, #dde2e9);
+  padding-bottom: 4rem;
+}
+
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.eyebrow {
+  margin-bottom: 1.25rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-gray-dark, #707781);
+}
+
+.mainTitle {
+  font-family: var(--font-main), sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  font-weight: 500;
+  margin: 0;
+  color: var(--color-black, #212121);
+}
+
+.heroRight {
+  display: flex;
+  align-items: center;
+}
+
+.heroDesc {
+  max-width: 28rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-gray-dark, #707781);
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .heroSection {
+    padding-top: 9rem;
+    padding-bottom: 6rem;
+  }
+  
+  .heroGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .mainTitle {
+    font-size: 4.25rem;
+  }
+
+  .heroDesc {
+    padding-top: 1.5rem;
+  }
+}

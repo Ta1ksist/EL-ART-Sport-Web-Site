@@ -1,0 +1,129 @@
+.servicesSection {
+  width: 100%;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centerWrapper {
+  width: 100%;
+  max-width: 1600px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.servicesGrid {
+  display: grid;
+  gap: 1px;
+  background-color: var(--color-gray-light, #dde2e9);
+}
+
+.serviceCard {
+  background-color: var(--color-white, #ffffff);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.cardNumber {
+  font-family: var(--font-main), sans-serif;
+  font-size: 1.875rem;
+  color: var(--color-gray-mid, #b9bfc7);
+  font-weight: 500;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-gray-dark, #707781);
+}
+
+.cardTitle {
+  font-family: var(--font-main), sans-serif;
+  margin-top: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--color-black, #212121);
+  margin-bottom: 0;
+}
+
+.cardLead {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-gray-dark, #707781);
+  margin-bottom: 0;
+}
+
+.innerDivider {
+  margin-top: 2rem;
+  border-top: 1px solid var(--color-gray-light, #dde2e9);
+  padding-top: 1.5rem;
+}
+
+.innerLabel {
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-gray-dark, #707781);
+}
+
+.includesList {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0;
+}
+
+.includesItem {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--color-black, #212121);
+}
+
+.lineMarker {
+  margin-top: 10px;
+  display: block;
+  height: 1px;
+  width: 1rem;
+  flex-shrink: 0;
+  background-color: var(--color-gray-mid, #b9bfc7);
+}
+
+.deliversText {
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-style: italic;
+  color: var(--color-gray-dark, #707781);
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .servicesSection {
+    padding-bottom: 6rem;
+  }
+
+  .servicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .serviceCard {
+    padding: 3rem;
+  }
+
+  .cardTitle {
+    font-size: 2rem;
+  }
+}

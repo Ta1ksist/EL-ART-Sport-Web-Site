@@ -1,0 +1,190 @@
+.section {
+  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centerWrapper {
+  width: 100%;
+  max-width: 1600px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.header {
+  margin-bottom: 3.5rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-gray-dark, #707781);
+}
+
+.title {
+  font-family: var(--font-main), sans-serif;
+  margin-top: 0.75rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.15;
+  color: var(--color-black, #212121);
+  margin-bottom: 0;
+  letter-spacing: -0.01em;
+}
+
+
+.linkUnderline {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-black, #212121);
+  position: relative;
+  display: none; 
+}
+
+.linkUnderline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: currentColor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.linkUnderline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.grid {
+  display: grid;
+  gap: 4rem 1.5rem;
+}
+
+.projectCard {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-gray-light, #dde2e9);
+  aspect-ratio: 4 / 5;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 1200ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent);
+  opacity: 0;
+  transition: opacity 0.7s ease;
+  pointer-events: none;
+}
+
+.projectCard:hover .image {
+  transform: scale(1.04);
+}
+
+.projectCard:hover .overlay {
+  opacity: 1;
+}
+
+.metaInfo {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.styleLocation {
+  font-size: 0.75rem; /* text-xs */
+  letter-spacing: 0.1em;
+  color: var(--color-gray-dark, #707781);
+  text-transform: uppercase;
+}
+
+.projectTitle {
+  font-family: var(--font-main), sans-serif;
+  margin-top: 0.5rem;
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 500;
+  color: var(--color-black, #212121);
+  margin-bottom: 0;
+}
+
+.counter {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--color-gray-dark, #707781);
+  font-variant-numeric: tabular-nums;
+}
+
+.mobileFooter {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.mobileFooter .linkUnderline {
+  display: inline; 
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .header {
+    margin-bottom: 5rem;
+  }
+
+   .title {
+    font-size: 3.25rem;
+  }
+
+  .linkUnderline {
+    display: inline;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); 
+    column-gap: 2.5rem;
+    row-gap: 7rem;
+  }
+
+  .gridLinkOdd {
+    margin-top: 5rem; 
+  }
+
+  .projectTitle {
+    font-size: 1.875rem;
+  }
+
+  .mobileFooter {
+    display: none;
+  }
+}

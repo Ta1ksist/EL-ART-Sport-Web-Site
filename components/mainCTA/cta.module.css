@@ -1,0 +1,95 @@
+.section {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  padding-bottom: 8rem;
+}
+
+.content {
+  border-top: 1px solid var(--hairline, #e5e7eb);
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.title {
+  font-family: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 48rem;
+  font-size: 2.25rem;
+  line-height: 1.05;
+}
+
+.italicText {
+  font-family: inherit;
+  font-style: italic;
+  color: var(--stone, #78716c);
+}
+
+.buttonGroup {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.btnBase {
+  display: inline-flex;
+  align-items: center;
+  font-family: inherit;
+  font-size: 12px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btnPrimary {
+  border: 1px solid var(--foreground, #000000);
+  color: var(--foreground, #000000);
+  padding: 1rem 2rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btnPrimary:hover {
+  background-color: var(--foreground, #000000);
+  color: var(--background, #ffffff);
+}
+
+
+.btnSecondary {
+  padding: 1rem 1rem;
+  color: inherit;
+  position: relative;
+}
+
+.btnSecondary::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 6px;
+  left: 0;
+  background-color: currentColor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.btnSecondary:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+@media (min-width: 768px) {
+  .content {
+    padding-top: 7rem; /* pt-28 */
+  }
+
+  .title {
+    font-size: 3.75rem; /* text-6xl */
+  }
+}

@@ -1,0 +1,129 @@
+.nextSection {
+  width: 100%;
+  margin-top: 6rem;
+  border-top: 1px solid var(--color-gray-light, #dde2e9);
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centerWrapper {
+  width: 100%;
+  max-width: 1600px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.nextHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-gray-dark, #707781);
+}
+
+.linkUnderline {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-black, #212121);
+  position: relative;
+}
+
+.linkUnderline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: currentColor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.linkUnderline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nextCard {
+  margin-top: 2rem;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nextGrid {
+  display: grid;
+  gap: 2rem;
+}
+
+.nextProjectTitle {
+  font-family: var(--font-main), sans-serif;
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--color-black, #212121);
+  margin: 0;
+}
+
+.nextMeta {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--color-gray-dark, #707781);
+  text-transform: uppercase;
+}
+
+.nextActionLink {
+  margin-top: 1.5rem;
+  display: inline-block;
+}
+
+.nextImageBlock {
+  overflow: hidden;
+  background-color: var(--color-gray-light, #dde2e9);
+}
+
+.nextAspect {
+  aspect-ratio: 16 / 10;
+}
+
+.nextImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 1200ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nextCard:hover .nextImg {
+  transform: scale(1.04);
+}
+
+@media (min-width: 768px) {
+  .nextSection {
+    margin-top: 8rem;
+    padding-top: 6rem;
+  }
+
+  .nextGrid {
+    grid-template-columns: 1fr 1.4fr;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .nextProjectTitle {
+    font-size: 3.5rem;
+  }
+}

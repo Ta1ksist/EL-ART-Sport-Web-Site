@@ -1,0 +1,117 @@
+.processSection {
+  width: 100%;
+  border-top: 1px solid var(--color-gray-light, #dde2e9);
+  border-bottom: 1px solid var(--color-gray-light, #dde2e9);
+  background-color: rgba(243, 244, 246, 0.4);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centerWrapper {
+  width: 100%;
+  max-width: 1600px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.processGrid {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-gray-dark, #707781);
+}
+
+.mainTitle {
+  font-family: var(--font-main), sans-serif;
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--color-black, #212121);
+  margin-bottom: 0;
+}
+
+.processList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.processItem {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: baseline;
+  gap: 1.5rem;
+  border-top: 1px solid var(--color-gray-light, #dde2e9);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.processNumber {
+  font-family: var(--font-main), sans-serif;
+  font-size: 1.875rem;
+  color: var(--color-gray-mid, #b9bfc7);
+  font-weight: 500;
+  min-width: 2.5rem;
+}
+
+.processStepTitle {
+  font-family: var(--font-main), sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-black, #212121);
+}
+
+.processStepDesc {
+  margin-top: 0.5rem;
+  max-width: 42rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--color-gray-dark, #707781);
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .processSection {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .processGrid {
+    grid-template-columns: 1fr 2fr;
+    gap: 6rem;
+  }
+
+  .mainTitle {
+    font-size: 3.5rem;
+  }
+
+  .processItem {
+    gap: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .processNumber {
+    font-size: 2.25rem;
+  }
+
+  .processStepTitle {
+    font-size: 1.875rem;
+  }
+
+  .processStepDesc {
+    font-size: 1rem;
+  }
+}
