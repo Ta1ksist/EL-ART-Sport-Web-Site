@@ -30,7 +30,8 @@
 }
 
 .elartText {
-  font-family: inherit;
+  /* font-family: inherit; */
+  font-family: var(--font-logo); 
   font-size: clamp(60px, 17.5vw, 300px); 
   font-weight: 400;
   line-height: 0.85;

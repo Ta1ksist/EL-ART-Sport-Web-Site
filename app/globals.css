@@ -7,13 +7,15 @@
 :root {
   --color-black: #212121;
   --color-white: #ffffff;
+  /* --color-white: #f2ebdd; */
   --color-green: #00DC00;
   --color-gray-light: #dde2e9;
   --color-gray-mid: #b9bfc7;
   --color-gray-dark: #707781;
   --color-overlay: rgba(0,0,0,0.55);
 
-  --font-main: var(--font-font-montserrat, var(--font-montserrat)), sans-serif;
+  --font-main: var(--font-montserrat), sans-serif;
+  --font-logo: var(--font-vivita), sans-serif;
 
   --container-max: 1440px;
   --container-padding-desktop: 40px;

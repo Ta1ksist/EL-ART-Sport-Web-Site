@@ -31,7 +31,7 @@ export default function MainScene() {
       <div className={styles.vignette} />
       <div className={styles.titleWrap}>
         <p className={styles.titleMain}>EL'ART</p>
-        <p className={styles.titleSub}>Спортивный комплекс под ключ на любом этапе.</p>
+        <p className={styles.titleSub}>Спортивный комплекс под ключ.</p>
       </div>
     </div>
   );

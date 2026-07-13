@@ -12,7 +12,6 @@ export default function ProjectBrief({ project: p }: ProjectBriefProps) {
         <div className={styles.briefGrid}>
           
           <dl className={styles.specsList}>
-            <Spec label="Стиль" value={p.style} />
             <Spec label="Тип объекта" value={p.type} />
             <Spec label="Локация" value={p.location} />
             <Spec label="Площадь" value={p.area} />

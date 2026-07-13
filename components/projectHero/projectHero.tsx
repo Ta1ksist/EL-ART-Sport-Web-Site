@@ -18,7 +18,7 @@ export default function ProjectHero({ project }: ProjectHeroProps) {
       
       <div className={`${styles.centerWrapper} ${styles.coverContent}`}>
         <div className={styles.eyebrow}>
-          {project.style} · {project.type} · {project.year}
+          {project.type} · {project.year}
         </div>
         <h1 className={styles.mainTitle}>{project.title}</h1>
         <div className={styles.coverLocation}>{project.location}</div>

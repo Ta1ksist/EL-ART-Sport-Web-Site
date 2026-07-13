@@ -2,7 +2,6 @@ export interface Project {
   slug: string;
   cover: string;
   title: string;
-  style: string;
   type: string;
   location: string;
   year: number;
@@ -13,16 +12,14 @@ export interface Project {
   gallery: string[];
 }
 
-export const FILTER_STYLES = ["Минимализм", "Модерн", "Хай-тек", "Брутализм"] as const;
-export const FILTER_TYPES = ["Падел", "Фитнес", "Офисы", "Жилая", "Рестораны"] as const;
+export const FILTER_TYPES = ["Падел-комплекс", "Фитнес", "Офисы", "Жилая", "Рестораны"] as const;
 
 export const PROJECTS: Project[] = [
   { 
     slug: "rocket-padel-kemerovo", 
     cover: "/projects/preview/preview-rocket-padel-kem.webp", 
     title: "Падел-комплекс Rocket Kemerovo", 
-    style: "Модерн", 
-    type: "Падел", 
+    type: "Падел-комплекс", 
     location: "Россия, Кемерово", 
     year: 2026,
     designCode: "Кодовые слова: комфорт, функциональность, инновационность, узнаваемость.",
@@ -38,11 +35,10 @@ export const PROJECTS: Project[] = [
     ]
   },
   { 
-    slug: "rocket-padel-vlg", 
+    slug: "rocket-padel", 
     cover: "/projects/preview/preview-rocket-padel-vlg.png", 
-    title: "Падел-комплекс Rocket Volgograd", 
-    style: "Минимализм", 
-    type: "Падел", 
+    title: "Падел-комплекс Rocket", 
+    type: "Падел-комплекс", 
     location: "Россия, Волгоград", 
     year: 2026,
     designCode: "Вечное лето — это не сезон. Это внутреннее состояние. Наш проект — это попытка материализовать это ощущение через объём, свет и форму. Мы проектировали не стены, а само лето.",
@@ -60,7 +56,6 @@ export const PROJECTS: Project[] = [
     slug: "studio-flex-msc", 
     cover: "/projects/preview/preview-studio-flex-msc.jpg", 
     title: "Студия женского фитнеса «THE FLEX»", 
-    style: "Хай-тек", 
     type: "Фитнес", 
     location: "Россия, Москва", 
     year: 2025,
@@ -76,25 +71,24 @@ export const PROJECTS: Project[] = [
       "/projects/studio-flex-msc/5.jpg"
     ]
   },
-  { 
-    slug: "padel-club-viv", 
-    cover: "/projects/preview/preview-padel-club-viv.png", 
-    title: "Падел-клуб VIV", 
-    style: "Минимализм", 
-    type: "Падел", 
-    location: "ОАЭ, Дубай",
-    year: 2025,
-    designCode: "Все помещения спроектированы как потенциальные сцены для мероприятий. Здесь легко можно провести как турнир, так и арт-вечер.",
-    designPrinciple: "Мы выстроили целый мир вокруг спортивного ядра. После игры гости могут продолжить день, не покидая пространство: поработать в коворкинге, провести встречу в лаунж-зоне или насладиться ужином.",
-    area: "#### м²",
-    timeline: "3 месяца",
-    gallery: [
-      "/projects/padel-club-viv/1.png", 
-      "/projects/padel-club-viv/2.png", 
-      "/projects/padel-club-viv/3.png",
-      "/projects/padel-club-viv/4.png"
-    ]
-  },
+  // { 
+  //   slug: "padel-club-viv", 
+  //   cover: "/projects/preview/preview-padel-club-viv.png", 
+  //   title: "Падел-клуб VIV", 
+  //   type: "Падел", 
+  //   location: "ОАЭ, Дубай",
+  //   year: 2025,
+  //   designCode: "Все помещения спроектированы как потенциальные сцены для мероприятий. Здесь легко можно провести как турнир, так и арт-вечер.",
+  //   designPrinciple: "Мы выстроили целый мир вокруг спортивного ядра. После игры гости могут продолжить день, не покидая пространство: поработать в коворкинге, провести встречу в лаунж-зоне или насладиться ужином.",
+  //   area: "#### м²",
+  //   timeline: "3 месяца",
+  //   gallery: [
+  //     "/projects/padel-club-viv/1.png", 
+  //     "/projects/padel-club-viv/2.png", 
+  //     "/projects/padel-club-viv/3.png",
+  //     "/projects/padel-club-viv/4.png"
+  //   ]
+  // },
 ];
 
 export function getAllProjects(): Project[] { 

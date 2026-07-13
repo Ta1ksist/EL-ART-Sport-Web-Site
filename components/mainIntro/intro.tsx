@@ -23,10 +23,10 @@ export default function Intro() {
               <div className={styles.statNumber}>4</div>
               <div className={styles.statLabel}>Стран</div>
             </div> */}
-            <div>
+            {/* <div>
               <div className={styles.statNumber}>2025</div>
               <div className={styles.statLabel}>Основана в Казани</div>
-            </div>
+            </div> */}
           </div>
         </div>
 

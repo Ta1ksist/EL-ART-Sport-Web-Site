@@ -43,7 +43,7 @@ export default function PortfolioPage() {
       </header>
 
       <div className={styles.filtersContainer}>
-        <FilterGroup label="Стиль" value={filter.style} options={FILTER_STYLES as unknown as string[]} onChange={(v) => setFilter((f) => ({ ...f, style: v }))} />
+        {/* <FilterGroup label="Стиль" value={filter.style} options={FILTER_STYLES as unknown as string[]} onChange={(v) => setFilter((f) => ({ ...f, style: v }))} /> */}
         <FilterGroup label="Тип объекта" value={filter.type} options={FILTER_TYPES as unknown as string[]} onChange={(v) => setFilter((f) => ({ ...f, type: v }))} />
         <FilterGroup label="Локация" value={filter.location} options={locations} onChange={(v) => setFilter((f) => ({ ...f, location: v }))} />
       </div>

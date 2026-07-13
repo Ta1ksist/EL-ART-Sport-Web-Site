@@ -1,21 +1,18 @@
-/* Внешний контейнер секции */
 .section {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
-  padding-top: 6rem; /* py-24 */
+  padding-top: 6rem;
   padding-bottom: 6rem;
 }
 
-/* Двухколоночная сетка */
 .grid {
   display: grid;
-  gap: 3rem; /* gap-12 */
+  gap: 3rem;
 }
 
-/* Левая колонка — надпись-заголовок */
 .eyebrow {
   font-size: 0.75rem;
   text-transform: uppercase;
@@ -23,28 +20,25 @@
   color: var(--color-gray-dark, #707781);
 }
 
-/* Главный текст описания студии */
 .description {
   font-family: var(--font-main), sans-serif;
-  font-size: 1.875rem; /* text-3xl */
+  font-size: 1.875rem;
   line-height: 1.15;
   color: var(--color-black, #212121);
   margin: 0;
 }
 
-/* Контейнер для счетчиков и статистики */
 .statsGroup {
-  margin-top: 2.5rem; /* mt-10 */
+  margin-top: 2.5rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  column-gap: 3rem; /* gap-x-12 */
-  row-gap: 1.5rem; /* gap-y-6 */
+  column-gap: 3rem;
+  row-gap: 1.5rem;
   font-size: 0.875rem;
   color: var(--color-gray-dark, #707781);
 }
 
-/* Блок одной цифры статистики */
 .statNumber {
   font-family: var(--font-main), sans-serif;
   font-size: 1.875rem; /* text-3xl */
@@ -53,38 +47,36 @@
   line-height: 1;
 }
 
-/* Подпись под цифрой */
 .statLabel {
-  margin-top: 0.25rem; /* mt-1 */
-  font-size: 0.75rem; /* text-xs */
-  letter-spacing: 0.1em; /* tracking-widest */
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--color-gray-dark, #707781);
 }
 
-/* Адаптивные медиа-запросы */
 @media (min-width: 640px) {
   .description {
-    font-size: 2.25rem; /* sm:text-4xl */
+    font-size: 2.25rem;
   }
 }
 
 @media (min-width: 768px) {
   .section {
-    padding-top: 10rem; /* md:py-40 */
+    padding-top: 10rem; 
     padding-bottom: 10rem;
   }
 
   .grid {
-    grid-template-columns: 1fr 2fr; /* md:grid-cols-[1fr_2fr] */
-    gap: 6rem; /* md:gap-24 */
+    grid-template-columns: 1fr 2fr; 
+    gap: 6rem;
   }
 
   .eyebrow {
-    padding-top: 0.75rem; /* md:pt-3 */
+    padding-top: 0.75rem;
   }
 
   .description {
-    font-size: 44px; /* md:text-[44px] */
+    font-size: 44px;
   }
 }
