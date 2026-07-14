@@ -86,10 +86,10 @@
 
 @media (min-width: 768px) {
   .content {
-    padding-top: 7rem; /* pt-28 */
+    padding-top: 7rem;
   }
 
   .title {
-    font-size: 3.75rem; /* text-6xl */
+    font-size: 3.75rem; 
   }
 }

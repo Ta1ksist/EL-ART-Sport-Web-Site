@@ -1,5 +1,6 @@
 import ServicesHero from "@/components/servicesHero/servicesHero";
 import ServicesList from "@/components/servicesList/servicesList";
+import ServicesRoadmap from "@/components/servicesRoadmap/servicesRoadmap";
 import ServicesProcess from "@/components/servicesProcess/servicesProcess";
 import ServicesCta from "@/components/servicesCta/servicesCta";
 
@@ -18,7 +19,8 @@ export default function ServicesPage() {
     <>
         <ServicesHero />
         <ServicesList />
-        <ServicesProcess />
+        <ServicesRoadmap />
+        {/* <ServicesProcess /> */}
         <ServicesCta />      
     </>
   );

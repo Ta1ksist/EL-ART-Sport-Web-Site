@@ -41,7 +41,7 @@
 
 .statNumber {
   font-family: var(--font-main), sans-serif;
-  font-size: 1.875rem; /* text-3xl */
+  font-size: 1.875rem;
   font-weight: 500;
   color: var(--color-black, #212121);
   line-height: 1;

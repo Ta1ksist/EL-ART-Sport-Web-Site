@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { PROJECTS, FILTER_STYLES, FILTER_TYPES } from "@/lib/projects";
+import { PROJECTS, FILTER_TYPES } from "@/lib/projects";
 import styles from "./projects.module.css";
 import ProjectSoon from "@/components/projectSoon/projectSoon";
 
@@ -20,7 +20,7 @@ export default function PortfolioPage() {
   const filtered = useMemo(
     () =>
       PROJECTS.filter((p) => {
-        if (filter.style && p.style !== filter.style) return false;
+        // if (filter.style && p.style !== filter.style) return false;
         if (filter.type && p.type !== filter.type) return false;
         if (filter.location && !p.location.endsWith(filter.location)) return false;
         return true;
@@ -73,7 +73,7 @@ export default function PortfolioPage() {
               <div className={styles.metaInfo}>
                 <div className={styles.metaTextContainer}>
                   <div className={styles.styleLocation}>
-                    {p.style} · {p.type} · {p.location}
+                    {p.type} · {p.location}
                   </div>
                   <h3 className={styles.projectTitle}>{p.title}</h3>
                 </div>

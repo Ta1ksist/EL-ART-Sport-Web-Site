@@ -8,8 +8,10 @@ export default function AboutStudio() {
           <div className={styles.heroLeft}>
             <div className={styles.eyebrow}>О студии</div>
             <h1 className={styles.mainTitle}>
-              Небольшая студия,<br />
-              <span className={styles.italicText}>по замыслу.</span>
+              Проектируем пространства,<br />
+              <span className={styles.italicText}>
+                наполненные светом.
+              </span>
             </h1>
           </div>
         
