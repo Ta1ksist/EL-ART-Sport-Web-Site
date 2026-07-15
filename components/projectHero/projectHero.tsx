@@ -1,5 +1,6 @@
 import { Project } from "@/lib/projects";
 import styles from "./projectHero.module.css";
+import Image from "next/image";
 
 interface ProjectHeroProps {
   project: Project;
@@ -8,11 +9,13 @@ interface ProjectHeroProps {
 export default function ProjectHero({ project }: ProjectHeroProps) {
   return (
     <section className={styles.coverSection}>
-      <img 
-        src={project.cover} 
-        alt={project.title} 
-        className={styles.coverImage} 
-        loading="eager" 
+      <Image 
+       src={project.cover}
+       alt={project.title}
+       className={styles.coverImage}
+       fill
+       sizes="100vw"
+       priority
       />
       <div className={styles.coverOverlay} />
       

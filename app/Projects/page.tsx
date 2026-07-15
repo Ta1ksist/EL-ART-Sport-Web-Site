@@ -1,6 +1,7 @@
 'use client';
 
 import Link from "next/link";
+import Image from "next/image";
 import { useMemo, useState } from "react";
 import { PROJECTS, FILTER_TYPES } from "@/lib/projects";
 import styles from "./projects.module.css";
@@ -68,7 +69,14 @@ export default function PortfolioPage() {
           return (
             <Link key={p.slug} href={`/Projects/${p.slug}`} className={cardClass}>
               <div className={styles.imageWrapper}>
-                <img src={p.cover} alt={p.title} loading="lazy" className={styles.image} />
+                <Image
+                    src={p.cover}
+                    alt={p.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    priority={i < 2}
+                    className={styles.image}
+                  />
               </div>
               <div className={styles.metaInfo}>
                 <div className={styles.metaTextContainer}>

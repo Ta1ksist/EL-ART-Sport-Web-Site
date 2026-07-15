@@ -67,7 +67,13 @@
   transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.teamCard:hover .teamAvatar img {
+.avatarImg {
+  object-fit: cover;
+  display: block;
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.teamCard:hover .avatarImg {
   transform: scale(1.03);
 }
 

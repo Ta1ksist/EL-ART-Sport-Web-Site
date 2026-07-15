@@ -1,5 +1,5 @@
 import styles from "./servicesList.module.css";
-
+import Image from "next/image";
 interface ServiceItem {
   n: string;
   title: string;
@@ -104,12 +104,20 @@ export default function ServicesList() {
 
             {s.cover && (
               <div className={styles.coverWrap}>
-                <img
+                {/* <img
                   src={s.cover}
                   alt={s.title}
                   className={styles.coverImage}
                   loading="lazy"
-                />
+                /> */}
+                 <Image
+                    src={s.cover}
+                    alt={s.title}
+                    className={styles.coverImage}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    priority={s.n === "01"}
+                  />
               </div>
             )}
 

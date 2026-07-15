@@ -1,4 +1,5 @@
 import styles from "./ourApproach.module.css";
+import Image from "next/image";
 
 interface OurApproachProps {
   imageSrc: any;
@@ -13,10 +14,11 @@ export default function OurApproach({ imageSrc }: OurApproachProps) {
         <div className={styles.grid}>
           
           <div className={styles.imgBlock}>
-            <img 
+            <Image 
               src={finalSrc} 
               alt="Деталь интерьера студии EL'ART" 
-              loading="lazy" 
+              fill
+              sizes="(max-width: 768px) 100vw, 55vw"
               className={styles.imgFull} 
             />
           </div>

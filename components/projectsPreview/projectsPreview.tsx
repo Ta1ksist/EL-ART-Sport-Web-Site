@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from 'next/image'
 import { PROJECTS } from "@/lib/projects";
 import ProjectSoon from "@/components/projectSoon/projectSoon";
 import styles from "./projectsPreview.module.css";
@@ -39,10 +40,12 @@ export default function ProjectsPreview() {
                 className={cardClass}
               >
                 <div className={styles.imageWrapper}>
-                  <img
+                  <Image
                     src={p.cover}
                     alt={p.title}
-                    loading="lazy"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    priority={i < 2}
                     className={styles.image}
                   />
                   <div className={styles.overlay} />

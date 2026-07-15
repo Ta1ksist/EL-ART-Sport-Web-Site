@@ -1,4 +1,5 @@
 import styles from "./team.module.css";
+import Image from "next/image";
 
 interface TeamMember {
   name: string;
@@ -28,7 +29,13 @@ export default function TeamSection() {
               
               <div className={styles.teamAvatar}>
                 {member.img ? (
-                  <img src={member.img} alt={member.name} loading="lazy" />
+                  <Image 
+                   src={member.img} 
+                   alt={member.name} 
+                   fill
+                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                   className={styles.avatarImg} 
+                  />
                 ) : (
                   <span>
                     {member.name

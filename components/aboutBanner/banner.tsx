@@ -1,4 +1,5 @@
 import styles from "./banner.module.css";
+import Image from "next/image";
 
 interface AboutBannerProps {
   imageSrc: any;
@@ -9,10 +10,11 @@ export default function AboutBanner({ imageSrc }: AboutBannerProps) {
 
   return (
     <section className={styles.bannerSection}>
-      <img 
+      <Image 
         src={finalSrc} 
         alt="Интерьер спроектированного спортивного комплекса" 
-        loading="lazy" 
+        fill
+        sizes="100vw"
         className={styles.imgFull} 
       />
       

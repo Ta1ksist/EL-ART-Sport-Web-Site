@@ -49,7 +49,8 @@ export const PROJECTS: Project[] = [
       "/projects/rocket-padel-vlg/1.png", 
       "/projects/rocket-padel-vlg/2.png", 
       "/projects/rocket-padel-vlg/3.png",
-      "/projects/rocket-padel-vlg/4.png"
+      "/projects/rocket-padel-vlg/4.png",
+      "/projects/rocket-padel-vlg/5.png",
     ]
   },
   { 
