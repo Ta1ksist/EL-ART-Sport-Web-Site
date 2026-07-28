@@ -120,6 +120,58 @@
   color: #ffffff;
 }
 
+.btnBase {
+  display: inline-flex;
+  align-items: center;
+  font-family: inherit;
+  font-size: 12px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  margin-left: auto; /* Толкает кнопку в крайнее правое положение */
+}
+
+.btnPrimary {
+  background-color: transparent; 
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  padding: 1rem 2rem;
+  transition: border-color 0.25s ease, background-color 0.25s ease, color 0.25s ease;
+}
+
+.btnPrimary:hover {
+  background-color: #ffffff;
+  color: #121212;
+  border-color: #ffffff;
+}
+
+.btnPrimaryDark {
+  border: 1px solid var(--color-black, #212121);
+  color: var(--color-black, #212121);
+}
+
+.btnPrimaryDark:hover {
+  background-color: var(--color-black, #212121) !important; /* Заливается черным */
+  color: #ffffff !important;                                 /* Текст становится белым */
+}
+
+.headerMenuOpen .btnPrimary:hover {
+  background-color: transparent !important;
+  border-color: rgba(255, 255, 255, 1);
+  color: #ffffff;
+}
+
+.headerMenuOpen .btnPrimary {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+}
+.headerMenuOpen .btnPrimary:hover {
+  background-color: #ffffff;
+  color: #121212;
+}
+
 .burgerBtn {
   display: none;
   flex-direction: column;
@@ -286,6 +338,16 @@
     display: none;
   }
 
+  .btnBase {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    margin-right: 16px; /* Отступ до палочек бургер-меню */
+  }
+  
+  .btnPrimary {
+    padding: 0.65rem 1.25rem; /* Компактные отступы на смартфонах */
+  }
+
   .burgerBtn {
     display: flex;
   }
@@ -297,5 +359,11 @@
   .container {
     padding: 0 24px;
     height: 72px;
+  }
+}
+
+@media (min-width: 769px) {
+  .btnBase {
+    margin-right: 0;
   }
 }

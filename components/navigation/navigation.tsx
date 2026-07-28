@@ -63,6 +63,13 @@ export default function NavBar() {
             ))}
           </nav>
 
+          {/* <Link 
+            href="/Contact" 
+            className={`${styles.btnBase} ${styles.btnPrimary} ${isDark && !menuOpen ? styles.btnPrimaryDark : ''}`}
+            >
+            Связаться
+          </Link> */}
+
           <button
             className={`${styles.burgerBtn} ${menuOpen ? styles.burgerActive : ''}`}
             onClick={() => setMenuOpen(!menuOpen)}
