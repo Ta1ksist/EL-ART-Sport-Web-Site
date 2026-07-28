@@ -32,7 +32,6 @@
   margin-bottom: 4rem;
 }
 
-/* Мобильная версия: центрирование в одну колонку */
 .partnersGrid {
   display: grid;
   grid-template-columns: 1fr;
@@ -42,17 +41,17 @@
 .partnerCard {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Центрируем логотип и текстовый блок по горизонтали */
-  text-align: center; /* Центрируем текст внутри блока */
+  align-items: center;
+  text-align: center;
 }
 
 .partnerLogo {
   position: relative;
   width: 100%;
-  height: 100px; /* Увеличили высоту контейнера для масштаба */
+  height: 100px;
   display: flex;
   align-items: center;
-  justify-content: center; /* Строго по центру */
+  justify-content: center;
   font-size: 3rem;
   color: var(--color-gray-dark, #707781);
   font-weight: 300;
@@ -63,9 +62,9 @@
 .logoImg {
   height: 100%;
   width: auto;
-  max-width: 280px; /* Увеличили максимальную ширину логотипа */
+  max-width: 280px;
   object-fit: contain;
-  object-position: center; /* Картинка строго по центру */
+  object-position: center;
   display: block;
   filter: grayscale(100%);
   opacity: 0.7;
@@ -75,16 +74,16 @@
 .partnerCard:hover .logoImg {
   opacity: 1;
   filter: grayscale(0%);
-  transform: scale(1.02); /* Легкий интерактивный масштаб при наведении */
+  transform: scale(1.02);
 }
 
 .partnerInfo {
-  margin-top: 1.5rem; /* Увеличили отступ от логотипа */
+  margin-top: 1.5rem;
 }
 
 .partnerName {
   font-family: var(--font-main), sans-serif;
-  font-size: 1.25rem; /* Чуть увеличили шрифт имени */
+  font-size: 1.25rem;
   font-weight: 500;
   color: var(--color-black, #212121);
   margin: 0 0 0.35rem 0;
@@ -96,10 +95,9 @@
   margin: 0;
 }
 
-/* На экранах от 640px делим строго пополам */
 @media (min-width: 640px) {
   .partnersGrid {
-    grid-template-columns: repeat(2, 1fr); /* Ровно пополам */
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 4rem;
     row-gap: 6rem;
   }
@@ -117,10 +115,10 @@
   }
 
   .partnerLogo {
-    height: 120px; /* Еще крупнее на десктопах */
+    height: 120px;
   }
 
   .logoImg {
-    max-width: 320px; /* Максимальный красивый масштаб для десктопа */
+    max-width: 320px;
   }
 }

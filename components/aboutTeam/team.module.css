@@ -1,11 +1,8 @@
 .teamSection {
   width: 100%;
-  padding-top: 5rem;
+  padding-top: 4rem;
   padding-bottom: 6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--color-white, #ffffff);
+  border-top: 1px solid var(--color-gray-light, #dde2e9);
 }
 
 .centerWrapper {
