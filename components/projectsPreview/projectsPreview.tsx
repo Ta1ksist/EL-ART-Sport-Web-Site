@@ -5,15 +5,10 @@ import ProjectSoon from "@/components/projectSoon/projectSoon";
 import styles from "./projectsPreview.module.css";
 
 export default function ProjectsPreview() {
-  // const featured = PROJECTS.slice(0, 4);
   const featured = PROJECTS.slice(0, 4);
-  // const totalCount = featured.length + 1;
-
   return (
     <section className={styles.section}>
       <div className={styles.centerWrapper}>
-        
-
         <div className={styles.header}>
           <div>
             <div className={styles.eyebrow}>Избранные объекты</div>
@@ -25,19 +20,13 @@ export default function ProjectsPreview() {
         </div>
 
         <div className={styles.grid}>
-
           <ProjectSoon isRightColumn={false} />
-
           {featured.map((p, i) => {
-
-            const isRightColumn = (i+1) % 2 === 1;
-            const cardClass = `${styles.projectCard} ${isRightColumn ? styles.gridLinkOdd : ""}`;
-
             return (
               <Link 
                 key={p.slug} 
                 href={`/Projects/${p.slug}`}
-                className={cardClass}
+                className={styles.projectCard}
               >
                 <div className={styles.imageWrapper}>
                   <Image
@@ -52,9 +41,9 @@ export default function ProjectsPreview() {
                 </div>
 
                 <div className={styles.metaInfo}>
-                  <div>
+                  <div className={styles.metaTextContainer}>
                     <div className={styles.styleLocation}>
-                     {p.type} · {p.area} · {p.location}
+                      {p.type} · {p.area} · {p.location}
                     </div>
                     <h3 className={styles.projectTitle}>{p.title}</h3>
                   </div>

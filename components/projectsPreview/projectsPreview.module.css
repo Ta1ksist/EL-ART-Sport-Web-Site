@@ -70,7 +70,9 @@
 
 .grid {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 4rem 1.5rem;
+  width: 100%;
 }
 
 .projectCard {
@@ -83,7 +85,6 @@
   position: relative;
   overflow: hidden;
   background-color: var(--color-gray-light, #dde2e9);
-  /* aspect-ratio: 4 / 5; */
   aspect-ratio: 16 / 10;
 }
 
@@ -120,11 +121,20 @@
   gap: 1.5rem;
 }
 
+.metaTextContainer {
+  min-width: 0;
+  flex: 1;
+}
+
 .styleLocation {
-  font-size: 0.75rem; /* text-xs */
+  font-size: 0.75rem; 
   letter-spacing: 0.1em;
   color: var(--color-gray-dark, #707781);
   text-transform: uppercase;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .projectTitle {
@@ -175,6 +185,7 @@
     grid-template-columns: repeat(2, minmax(0, 1fr)); 
     column-gap: 2.5rem;
     row-gap: 7rem;
+    align-items: start;
   }
 
   .gridLinkOdd {
