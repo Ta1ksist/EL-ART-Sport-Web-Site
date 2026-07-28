@@ -5,6 +5,7 @@ export default function AboutStudio() {
     <section className={styles.heroSection}>
       <div className={styles.heroCenterWrapper}>
         <div className={styles.heroGrid}>
+          
           <div className={styles.heroLeft}>
             <div className={styles.eyebrow}>О студии</div>
             <h1 className={styles.mainTitle}>

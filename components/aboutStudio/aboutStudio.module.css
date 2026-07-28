@@ -1,9 +1,7 @@
 .heroSection {
   width: 100%;
-  border-top: none !important;
-  margin-top: 0 !important;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,21 +12,24 @@
   max-width: 1600px;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .heroGrid {
   display: grid;
-  gap: 2.5rem;
-  align-items: center;
+  gap: 3rem;
+  align-items: start;
 }
 
 .heroLeft {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .eyebrow {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -38,20 +39,24 @@
 .mainTitle {
   font-family: var(--font-main), sans-serif;
   font-size: 2.5rem;
-  line-height: 1.1;
+  line-height: 1.15;
   font-weight: 500;
-  margin: 0;
   color: var(--color-black, #212121);
+  letter-spacing: -0.01em;
+  margin: 0;
 }
 
 .italicText {
+  font-family: inherit;
   font-style: italic;
-  color: var(--color-gray-dark, #707781);
+  color: var(--stone, #78716c);
 }
 
 .heroRight {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: center;
 }
 
 .heroDesc {
@@ -64,16 +69,17 @@
 
 @media (min-width: 768px) {
   .heroSection {
-    padding-top: 9rem;
-    padding-bottom: 7rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
-  
+
   .heroGrid {
-    grid-template-columns: 1fr 1fr;
-    gap: 6rem;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 5rem;
+    align-items: start;
   }
 
   .mainTitle {
-    font-size: 4.25rem;
+    font-size: 4rem;
   }
 }
