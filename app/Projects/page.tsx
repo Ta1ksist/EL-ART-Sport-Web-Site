@@ -21,7 +21,6 @@ export default function PortfolioPage() {
   const filtered = useMemo(
     () =>
       PROJECTS.filter((p) => {
-        // if (filter.style && p.style !== filter.style) return false;
         if (filter.type && p.type !== filter.type) return false;
         if (filter.location && !p.location.endsWith(filter.location)) return false;
         return true;
@@ -44,7 +43,6 @@ export default function PortfolioPage() {
       </header>
 
       <div className={styles.filtersContainer}>
-        {/* <FilterGroup label="Стиль" value={filter.style} options={FILTER_STYLES as unknown as string[]} onChange={(v) => setFilter((f) => ({ ...f, style: v }))} /> */}
         <FilterGroup label="Тип объекта" value={filter.type} options={FILTER_TYPES as unknown as string[]} onChange={(v) => setFilter((f) => ({ ...f, type: v }))} />
         <FilterGroup label="Локация" value={filter.location} options={locations} onChange={(v) => setFilter((f) => ({ ...f, location: v }))} />
       </div>
@@ -61,13 +59,8 @@ export default function PortfolioPage() {
       <div className={styles.projectsGrid}>
         <ProjectSoon isRightColumn={false} />
         {filtered.map((p, i) => {
-          // Если анонс убрать: расскоментировать след. строку
-          // const isRightColumn = i % 2 === 1;
-          const isRightColumn = (i+1) % 2 === 1;
-          const cardClass = `${styles.projectCard} ${isRightColumn ? styles.gridLinkOdd : ""}`;
-
           return (
-            <Link key={p.slug} href={`/Projects/${p.slug}`} className={cardClass}>
+            <Link key={p.slug} href={`/Projects/${p.slug}`} className={styles.projectCard}>
               <div className={styles.imageWrapper}>
                 <Image
                     src={p.cover}
@@ -81,7 +74,7 @@ export default function PortfolioPage() {
               <div className={styles.metaInfo}>
                 <div className={styles.metaTextContainer}>
                   <div className={styles.styleLocation}>
-                    {p.type} · {p.location}
+                    {p.type} · {p.area} · {p.location}
                   </div>
                   <h3 className={styles.projectTitle}>{p.title}</h3>
                 </div>

@@ -54,7 +54,7 @@ export default function ProjectsPreview() {
                 <div className={styles.metaInfo}>
                   <div>
                     <div className={styles.styleLocation}>
-                      {p.location}
+                     {p.type} · {p.area} · {p.location}
                     </div>
                     <h3 className={styles.projectTitle}>{p.title}</h3>
                   </div>
