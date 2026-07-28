@@ -83,7 +83,7 @@
 .designPrincipleParagraph {
   font-size: 1rem;
   line-height: 1.65;
-  color: var(--color-gray-dark, #707781);
+  color: var(--color-black, #212121);
   margin-bottom: 1.25rem;
 }
 
