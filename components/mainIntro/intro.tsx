@@ -13,20 +13,12 @@ export default function Intro() {
             Создаём жилые и общественные пространства с уникальным стилем и продуманной функциональностью.
           </p>
           
-          <div className={styles.statsGroup}>
+          {/* <div className={styles.statsGroup}>
             <div>
               <div className={styles.statNumber}>10 000+</div>
               <div className={styles.statLabel}>Квадратных метров</div>
             </div>
-            {/* <div>
-              <div className={styles.statNumber}>4</div>
-              <div className={styles.statLabel}>Стран</div>
-            </div> */}
-            {/* <div>
-              <div className={styles.statNumber}>2025</div>
-              <div className={styles.statLabel}>Основана в Казани</div>
-            </div> */}
-          </div>
+          </div> */}
         </div>
 
       </div>
