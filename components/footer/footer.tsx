@@ -43,8 +43,6 @@ export default function Footer() {
       <div className={styles.container}>
         
         <Link href="/" className={styles.logoBlock}>
-          <span className={styles.byText}>by</span>
-          <br />
           <span className={styles.elartText}>EL'ART</span>
         </Link>
 

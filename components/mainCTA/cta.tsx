@@ -7,7 +7,7 @@ export default function CTA() {
       <div className={styles.content}>
         
         <h2 className={styles.title}>
-          Уже присмотрели пространство? 
+          Хотите открыть спортивный комплекс? 
           <br />
           <span className={styles.italicText}>Давайте обсудим.</span>
         </h2>
