@@ -29,12 +29,13 @@ export default function ContactForm() {
                 }}
               >
                 <Field label="Ваше имя" name="name" required />
-                <Field label="Электронная почта" name="email" type="email" required />
-                <Field label="Телефон" name="phone" type="tel" />
+                {/* <Field label="Электронная почта" name="email" type="email" required /> */}
+                <Field label="Телефон" name="phone" type="tel" required/>
+                <Field label="Город" name="city" />
                 
                 <div>
                   <label className={styles.label} htmlFor="project">
-                    Тип спортивного объекта
+                    Тип объекта
                   </label>
                   <select
                     id="project"
@@ -43,12 +44,34 @@ export default function ContactForm() {
                     defaultValue=""
                   >
                     <option value="" disabled>Выберите из списка…</option>
-                    <option>Падел-клуб</option>
-                    <option>Фитнес-пространство</option>
-                    <option>Теннисные корты</option>
-                    <option>Жилое</option>
-                    <option>Другой коммерческий объект</option>
+                    <option>Спортивный комплекс</option>
+                    <option>Жилье</option>
+                    <option>Коммерция</option>
                   </select>
+                </div>
+
+                <div>
+                  <span className={styles.label}>Есть ли готовое помещение?</span>
+                  <div className={styles.radioGroup}>
+                    <label className={styles.radioLabel}>
+                      <input 
+                        type="radio" 
+                        name="hasPremises" 
+                        value="yes" 
+                        className={styles.radioInput} 
+                      />
+                      <span className={styles.radioCustom}>Да, помещение есть</span>
+                    </label>
+                    <label className={styles.radioLabel}>
+                      <input 
+                        type="radio" 
+                        name="hasPremises" 
+                        value="no" 
+                        className={styles.radioInput} 
+                      />
+                      <span className={styles.radioCustom}>Нет, только планируется</span>
+                    </label>
+                  </div>
                 </div>
 
                 <div>
@@ -71,11 +94,7 @@ export default function ContactForm() {
             )}
           </div>
 
-          <aside className={styles.aside}>
-            {/* <Detail label="Студия">
-              Россия, г. Казань<br />ул. Кремлевская, д. 12
-            </Detail> */}
-            
+          <aside className={styles.aside}>            
             <Detail label="Email">
               <a href="mailto:el.artstudio@mail.ru" className={styles.linkUnderline}>
                 el.artstudio@mail.ru
@@ -87,8 +106,8 @@ export default function ContactForm() {
             </Detail>
             
             <Detail label="Время работы">
-              Понедельник — Пятница · 08:00 — 18:00<br />
-              Онлайн конференции проводятся по предварительной записи.
+              Понедельник — Пятница · 09:00 — 19:00<br />
+              Онлайн конференции проводятся по предварительной записи
             </Detail>
             
             <Detail label="Мы в сети">
@@ -98,14 +117,7 @@ export default function ContactForm() {
                 <a href="https://wa.me/79061114994" className={styles.linkUnderline}>WhatsApp</a>
               </div>
             </Detail>
-
-            {/* <div className={styles.presentationBlock}>
-              <a href="#" className={styles.linkUnderline}>
-                Скачать презентацию студии ↓
-              </a>
-            </div> */}
           </aside>
-
         </div>
       </div>
     </section>
