@@ -8,8 +8,8 @@ interface Partner {
 }
 
 const PARTNERS: Partner[] = [
-  { name: 'Court Masters', type: 'Комплексный консалтинг', logo: '/Partners/courtmasters.png' },
-  { name: 'ARZ', type: 'Архитектурное бюро', logo: '/Partners/arz.svg' },
+  { name: 'Court Masters', type: 'Управление', logo: '/Partners/courtmasters.png' },
+  { name: 'ARZ', type: 'Архитектурное бюро', logo: '/Partners/arz.png' },
 ];
 
 export default function AboutPartners() {
@@ -29,7 +29,7 @@ export default function AboutPartners() {
                   <Image 
                    src={partner.logo} 
                    alt={partner.name} 
-                   width={400} /* Увеличили масштаб для четкости */
+                   width={400}
                    height={140}
                    className={styles.logoImg} 
                   />
