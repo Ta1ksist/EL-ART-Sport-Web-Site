@@ -24,9 +24,8 @@ export default function AboutPage() {
     <>
       <AboutStudio />
       <OurApproach imageSrc={p1}/>
-      <CoreValues />
       <Team />
-      <Banner imageSrc={p3}/>
+      {/* <Banner imageSrc={p3}/> */}
       <AboutContact />
     </>
   );

@@ -9,7 +9,7 @@ export default function CTA() {
         <h2 className={styles.title}>
           Хотите открыть спортивный комплекс? 
           <br />
-          <span className={styles.italicText}>Давайте обсудим.</span>
+          <span className={styles.italicText}>Давайте обсудим</span>
         </h2>
         
         <div className={styles.buttonGroup}>
