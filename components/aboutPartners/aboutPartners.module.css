@@ -1,0 +1,126 @@
+.partnersSection {
+  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  border-top: 1px solid var(--color-gray-light, #dde2e9);
+}
+
+.centerWrapper {
+  width: 100%;
+  max-width: 1600px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-gray-dark, #707781);
+}
+
+.mainTitle {
+  font-family: var(--font-main), sans-serif;
+  margin-top: 0.75rem; 
+  font-size: 2.75rem;
+  line-height: 1.1;
+  font-weight: 500;
+  color: var(--color-black, #212121);
+  letter-spacing: -0.01em;
+  margin-bottom: 4rem;
+}
+
+/* Мобильная версия: центрирование в одну колонку */
+.partnersGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4.5rem 2.5rem;
+}
+
+.partnerCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрируем логотип и текстовый блок по горизонтали */
+  text-align: center; /* Центрируем текст внутри блока */
+}
+
+.partnerLogo {
+  position: relative;
+  width: 100%;
+  height: 100px; /* Увеличили высоту контейнера для масштаба */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Строго по центру */
+  font-size: 3rem;
+  color: var(--color-gray-dark, #707781);
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.logoImg {
+  height: 100%;
+  width: auto;
+  max-width: 280px; /* Увеличили максимальную ширину логотипа */
+  object-fit: contain;
+  object-position: center; /* Картинка строго по центру */
+  display: block;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: opacity 0.4s ease, filter 0.4s ease, transform 0.4s ease;
+}
+
+.partnerCard:hover .logoImg {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.02); /* Легкий интерактивный масштаб при наведении */
+}
+
+.partnerInfo {
+  margin-top: 1.5rem; /* Увеличили отступ от логотипа */
+}
+
+.partnerName {
+  font-family: var(--font-main), sans-serif;
+  font-size: 1.25rem; /* Чуть увеличили шрифт имени */
+  font-weight: 500;
+  color: var(--color-black, #212121);
+  margin: 0 0 0.35rem 0;
+}
+
+.partnerRole {
+  font-size: 0.875rem;
+  color: var(--color-gray-dark, #707781);
+  margin: 0;
+}
+
+/* На экранах от 640px делим строго пополам */
+@media (min-width: 640px) {
+  .partnersGrid {
+    grid-template-columns: repeat(2, 1fr); /* Ровно пополам */
+    column-gap: 4rem;
+    row-gap: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .partnersSection {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .mainTitle {
+    font-size: 4rem;
+    margin-bottom: 6rem;
+  }
+
+  .partnerLogo {
+    height: 120px; /* Еще крупнее на десктопах */
+  }
+
+  .logoImg {
+    max-width: 320px; /* Максимальный красивый масштаб для десктопа */
+  }
+}

@@ -7,6 +7,7 @@ import CoreValues from "@/components/aboutCoreValues/coreValues";
 import Team from "@/components/aboutTeam/team";
 import Banner from "@/components/aboutBanner/banner";
 import AboutContact from "@/components/aboutContact/aboutContact";
+import AboutPartners from "@/components/aboutPartners/aboutPartners";
 
 
 export const metadata = {
@@ -25,6 +26,7 @@ export default function AboutPage() {
       <AboutStudio />
       <OurApproach imageSrc={p1}/>
       <Team />
+      <AboutPartners />
       {/* <Banner imageSrc={p3}/> */}
       <AboutContact />
     </>
