@@ -18,7 +18,7 @@ export const PROJECTS: Project[] = [
   { 
     slug: "rocket-padel-kemerovo", 
     cover: "/projects/preview/preview-rocket-padel-kem.webp", 
-    title: "Падел-комплекс Rocket Kemerovo", 
+    title: "Падел-комплекс «Rocket padel»", 
     type: "Падел-комплекс", 
     location: "Россия, Кемерово", 
     year: 2026,
@@ -37,7 +37,7 @@ export const PROJECTS: Project[] = [
   { 
     slug: "rocket-padel", 
     cover: "/projects/preview/preview-rocket-padel-vlg.png", 
-    title: "Падел-комплекс Rocket", 
+    title: "Падел-комплекс «Rocket padel»", 
     type: "Падел-комплекс", 
     location: "Россия, Волгоград", 
     year: 2026,

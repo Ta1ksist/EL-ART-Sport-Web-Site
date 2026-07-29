@@ -8,8 +8,9 @@ interface ProjectSoonProps {
 export default function ProjectSoon({ isRightColumn = false }: ProjectSoonProps) {
   const projectData = {
     imageSrc: "/projects/soon/pash-padel-soon.png",
-    title: "Pash padel",
-    type: "Падел",
+    title: 'Падел-комплекс «Pash padel»',
+    type: "Падел-комплекс",
+    area: "3500 м²",
     location: "Россия, Москва",
     year: "В разработке"
   };
@@ -34,7 +35,7 @@ export default function ProjectSoon({ isRightColumn = false }: ProjectSoonProps)
       <div className={styles.metaInfo}>
         <div className={styles.metaTextContainer}>
           <div className={styles.styleLocation}>
-            Анонс · {projectData.type} · {projectData.location}
+            Анонс · {projectData.type} · {projectData.area} · {projectData.location}
           </div>
           <h3 className={styles.projectTitle}>{projectData.title}</h3>
         </div>
