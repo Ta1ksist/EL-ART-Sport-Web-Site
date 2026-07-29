@@ -1,4 +1,5 @@
-import p1 from "@/public/assets/forAboutUs1.png";
+// import p1 from "@/public/assets/forAboutUs1.png";
+import p1 from "@/public/assets/forAboutUs.png";
 import p3 from "@/public/assets/forAboutUs2.png";
 
 import AboutStudio from "@/components/aboutStudio/aboutStudio";
@@ -27,7 +28,6 @@ export default function AboutPage() {
       <OurApproach imageSrc={p1}/>
       <Team />
       <AboutPartners />
-      {/* <Banner imageSrc={p3}/> */}
       <AboutContact />
     </>
   );

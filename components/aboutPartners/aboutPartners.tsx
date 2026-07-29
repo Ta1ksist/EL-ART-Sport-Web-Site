@@ -18,7 +18,7 @@ export default function AboutPartners() {
       <div className={styles.centerWrapper}>
         
         <span className={styles.eyebrow}>Партнеры</span>
-        <h2 className={styles.mainTitle}>Надежные союзы, сильные проекты.</h2>
+        <h2 className={styles.mainTitle}>Надежные союзы, сильные проекты</h2>
         
         <div className={styles.partnersGrid}>
           {PARTNERS.map((partner) => (
