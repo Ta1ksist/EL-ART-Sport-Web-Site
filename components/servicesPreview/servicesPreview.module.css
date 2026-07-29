@@ -64,12 +64,6 @@
 }
 
 .servicesGrid {
-  /* list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 1px;
-  background-color: var(--hairline, #e5e7eb); */
   list-style: none;
   margin: 0;
   padding: 0;
@@ -78,8 +72,6 @@
 }
 
 .card {
-  /* background-color: var(--background, #ffffff);
-  padding: 2rem; */
   background-color: var(--background, #ffffff);
   padding: 2rem;
   border-bottom: 1px solid var(--hairline, #e5e7eb);
