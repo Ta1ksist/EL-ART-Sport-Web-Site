@@ -2,14 +2,15 @@
   display: block;
   width: 100%;
   position: relative;
+  box-sizing: border-box;
 }
 
 .imageWrapper {
   position: relative;
   overflow: hidden;
   background-color: var(--color-gray-light, #dde2e9);
-  /* aspect-ratio: 4 / 5; */
   aspect-ratio: 16 / 10;
+  width: 100%;
 }
 
 .image {
@@ -42,13 +43,14 @@
 .soonText {
   color: #ffffff;
   font-family: var(--font-main), sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 0.4em;
-  padding-left: 0.4em;
+  letter-spacing: 0.3em;
+  padding-left: 0.3em;
   opacity: 0.85;
   transition: opacity 0.4s ease, transform 0.4s ease;
+  text-align: center;
 }
 
 .projectCardSoon:hover .soonText {
@@ -62,10 +64,12 @@
   align-items: baseline;
   justify-content: space-between;
   gap: 1rem;
+  width: 100%;
 }
 
 .metaTextContainer {
   min-width: 0;
+  flex: 1;
 }
 
 .styleLocation {
@@ -73,18 +77,22 @@
   letter-spacing: 0.1em;
   color: var(--color-gray-dark, #707781);
   text-transform: uppercase;
-  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .projectTitle {
   font-family: var(--font-main), sans-serif;
   margin-top: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 500;
   color: var(--color-black, #212121);
   margin-bottom: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
 .year {
