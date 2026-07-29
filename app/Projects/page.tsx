@@ -13,6 +13,11 @@ type Filter = { style: string | null; type: string | null; location: string | nu
 export default function PortfolioPage() {
   const [filter, setFilter] = useState<Filter>({ style: null, type: null, location: null });
 
+  const types = useMemo(
+    () => Array.from(new Set(PROJECTS.map((p) => p.type.split(",").pop()!.trim()))).sort(),
+    []
+  );
+
   const locations = useMemo(
     () => Array.from(new Set(PROJECTS.map((p) => p.location.split(",").pop()!.trim()))).sort(),
     []
@@ -36,14 +41,15 @@ export default function PortfolioPage() {
           <h1 className={styles.mainTitle}>Наши проекты</h1>
         </div>
         <p className={styles.heroDesc}>
-          Избранные коммерческие и спортивные объекты, спроектированные нашей командой. 
-          Каждый проект — это тонкий баланс между строгими техническими нормативами и 
-          премиальной архитектурной эстетикой.
+          Спортивные комплексы, коммерческие объекты и жилые пространства.
+           В основе каждого решения лежит баланс между техническими нормативами,
+            авторской идеей и архитектурной эстетикой.
         </p>
       </header>
 
       <div className={styles.filtersContainer}>
-        <FilterGroup label="Тип объекта" value={filter.type} options={FILTER_TYPES as unknown as string[]} onChange={(v) => setFilter((f) => ({ ...f, type: v }))} />
+        {/* <FilterGroup label="Тип объекта" value={filter.type} options={FILTER_TYPES as unknown as string[]} onChange={(v) => setFilter((f) => ({ ...f, type: v }))} /> */}
+        <FilterGroup label="Тип объектака" value={filter.type} options={types} onChange={(v) => setFilter((f) => ({ ...f, type: v }))} />
         <FilterGroup label="Локация" value={filter.location} options={locations} onChange={(v) => setFilter((f) => ({ ...f, location: v }))} />
       </div>
 
