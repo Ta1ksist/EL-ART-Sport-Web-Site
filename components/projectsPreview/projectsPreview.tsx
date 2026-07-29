@@ -1,11 +1,15 @@
 import Link from "next/link";
-import Image from 'next/image'
+import Image from 'next/image';
 import { PROJECTS } from "@/lib/projects";
 import ProjectSoon from "@/components/projectSoon/projectSoon";
 import styles from "./projectsPreview.module.css";
 
 export default function ProjectsPreview() {
   const featured = PROJECTS.slice(0, 4);
+  const completedProjectsCount = featured.filter(p => !p.isSoon).length;
+  
+  let completedIndex = 0;
+
   return (
     <section className={styles.section}>
       <div className={styles.centerWrapper}>
@@ -20,8 +24,11 @@ export default function ProjectsPreview() {
         </div>
 
         <div className={styles.grid}>
-          <ProjectSoon isRightColumn={false} />
           {featured.map((p, i) => {
+            if (p.isSoon) {
+              return <ProjectSoon key={p.slug} project={p} />;
+            }
+            completedIndex++;
             return (
               <Link 
                 key={p.slug} 
@@ -49,7 +56,7 @@ export default function ProjectsPreview() {
                   </div>
                   
                   <div className={styles.counter}>
-                    {String(i + 1).padStart(2, "0")} / {String(featured.length).padStart(2, "0")}
+                    {String(completedIndex).padStart(2, "0")} / {String(completedProjectsCount).padStart(2, "0")}
                   </div>
                 </div>
               </Link>

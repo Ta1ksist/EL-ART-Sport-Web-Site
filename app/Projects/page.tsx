@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useMemo, useState } from "react";
-import { PROJECTS, FILTER_TYPES } from "@/lib/projects";
+import { PROJECTS } from "@/lib/projects";
 import styles from "./projects.module.css";
 import ProjectSoon from "@/components/projectSoon/projectSoon";
 
@@ -48,8 +48,7 @@ export default function PortfolioPage() {
       </header>
 
       <div className={styles.filtersContainer}>
-        {/* <FilterGroup label="Тип объекта" value={filter.type} options={FILTER_TYPES as unknown as string[]} onChange={(v) => setFilter((f) => ({ ...f, type: v }))} /> */}
-        <FilterGroup label="Тип объектака" value={filter.type} options={types} onChange={(v) => setFilter((f) => ({ ...f, type: v }))} />
+        <FilterGroup label="Тип объекта" value={filter.type} options={types} onChange={(v) => setFilter((f) => ({ ...f, type: v }))} />
         <FilterGroup label="Локация" value={filter.location} options={locations} onChange={(v) => setFilter((f) => ({ ...f, location: v }))} />
       </div>
 
@@ -63,8 +62,11 @@ export default function PortfolioPage() {
       </div>
 
       <div className={styles.projectsGrid}>
-        <ProjectSoon isRightColumn={false} />
         {filtered.map((p, i) => {
+          if (p.isSoon) {
+            return <ProjectSoon key={p.slug} project={p} />;
+          }
+
           return (
             <Link key={p.slug} href={`/Projects/${p.slug}`} className={styles.projectCard}>
               <div className={styles.imageWrapper}>

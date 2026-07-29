@@ -4,17 +4,26 @@ export interface Project {
   title: string;
   type: string;
   location: string;
-  year: number;
-  designCode: string;
-  designPrinciple: string;
+  year: string | number;
+  isSoon?: boolean;
+  designCode?: string;
+  designPrinciple?: string;
   area: string;
-  timeline: string;
-  gallery: string[];
+  timeline?: string;
+  gallery?: string[];
 }
 
-export const FILTER_TYPES = ["Падел-комплекс", "Фитнес", "Жилье", "Рестораны"] as const;
-
 export const PROJECTS: Project[] = [
+  {
+    slug: "pash-padel-soon",
+    cover: "/projects/soon/pash-padel-soon.png",
+    title: "Падел-комплекс «Pash padel»",
+    type: "Падел-комплекс",
+    area: "3500 м²",
+    location: "Россия, Москва",
+    year: "В разработке",
+    isSoon: true
+  },
   { 
     slug: "rocket-padel-kemerovo", 
     cover: "/projects/preview/preview-rocket-padel-kem.webp", 
@@ -79,5 +88,5 @@ export function getAllProjects(): Project[] {
 }
 
 export function getProjectBySlug(slug: string): Project | undefined { 
-  return PROJECTS.find((p) => p.slug === slug); 
+  return PROJECTS.find((p) => p.slug === slug && !p.isSoon); 
 }

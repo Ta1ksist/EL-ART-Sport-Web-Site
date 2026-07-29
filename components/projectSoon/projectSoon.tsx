@@ -1,28 +1,19 @@
 import Image from "next/image";
 import styles from "./projectSoon.module.css";
+import { Project } from "@/lib/projects";
+
 
 interface ProjectSoonProps {
-  isRightColumn?: boolean;
+  project: Project;
 }
 
-export default function ProjectSoon({ isRightColumn = false }: ProjectSoonProps) {
-  const projectData = {
-    imageSrc: "/projects/soon/pash-padel-soon.png",
-    title: 'Падел-комплекс «Pash padel»',
-    type: "Падел-комплекс",
-    area: "3500 м²",
-    location: "Россия, Москва",
-    year: "В разработке"
-  };
-
-  const cardClass = `${styles.projectCardSoon} ${isRightColumn ? styles.gridLinkOdd : ""}`;
-
+export default function ProjectSoon({ project }: ProjectSoonProps) {
   return (
-    <div className={cardClass}>
+    <div className={styles.projectCardSoon}>
       <div className={styles.imageWrapper}>
         <Image 
-          src={projectData.imageSrc} 
-          alt={projectData.title} 
+          src={project.cover} 
+          alt={project.title} 
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
           loading="lazy" 
@@ -35,11 +26,11 @@ export default function ProjectSoon({ isRightColumn = false }: ProjectSoonProps)
       <div className={styles.metaInfo}>
         <div className={styles.metaTextContainer}>
           <div className={styles.styleLocation}>
-            Анонс · {projectData.type} · {projectData.area} · {projectData.location}
+            Анонс · {project.type} · {project.area} · {project.location}
           </div>
-          <h3 className={styles.projectTitle}>{projectData.title}</h3>
+          <h3 className={styles.projectTitle}>{project.title}</h3>
         </div>
-        <div className={styles.year}>{projectData.year}</div>
+        <div className={styles.year}>{project.year}</div>
       </div>
     </div>
   );
