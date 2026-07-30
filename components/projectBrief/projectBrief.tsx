@@ -15,8 +15,8 @@ export default function ProjectBrief({ project: p }: ProjectBriefProps) {
             <Spec label="Тип объекта" value={p.type} />
             <Spec label="Локация" value={p.location} />
             <Spec label="Площадь" value={p.area} />
-            <Spec label="Сроки реализации" value={p.timeline} />
-            <Spec label="Год реализации" value={String(p.year)} />
+            <Spec label="Срок проектирования" value={p.timeline} />
+            <Spec label="Год проектирования" value={String(p.year)} />
           </dl>
 
           <div className={styles.briefBlocks}>

@@ -26,12 +26,12 @@ export const PROJECTS: Project[] = [
   },
   { 
     slug: "rocket-padel-kemerovo", 
-    cover: "/projects/preview/preview-rocket-padel-kem.webp", 
+    cover: "/projects/preview/preview-rocket-padel-kem.jpg", 
     title: "Падел-комплекс «Rocket padel»", 
     type: "Падел-комплекс", 
     location: "Россия, Кемерово", 
-    year: 2026,
-    designCode: "Кодовые слова: комфорт, функциональность, инновационность, узнаваемость.",
+    year: 2025,
+    designCode: "Кодовые слова: многоуровневость, цвет, вечное лето, образ жизни.",
     designPrinciple: "Бизнес - это про окупаемость и эффективность использования каждого уголка помещения. Каждый сантиметр пространства должен работать и приносить пользу. \nЭргономика - это про комфорт человека внутри пространства. Мы мысленно проживаем каждый возможный маршрут гостя, чтобы ему везде было удобно, понятно и приятно находиться. \nКонцепция – это создании истории. Дизайн для нас не просто оформление, а целый мир со своим характером, атмосферой и сюжетностью.",
     area: "2600 м²",
     timeline: "3 месяца",
@@ -39,8 +39,9 @@ export const PROJECTS: Project[] = [
       "/projects/rocket-padel-kem/1.jpg", 
       "/projects/rocket-padel-kem/2.jpg", 
       "/projects/rocket-padel-kem/3.jpg",
-      "/projects/rocket-padel-kem/4.jpg", 
-      "/projects/rocket-padel-kem/5.jpg"
+      "/projects/rocket-padel-kem/4.jpg",
+      "/projects/rocket-padel-kem/5.jpg",
+      "/projects/rocket-padel-kem/6.png", 
     ]
   },
   { 
