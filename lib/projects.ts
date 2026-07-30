@@ -63,6 +63,25 @@ export const PROJECTS: Project[] = [
     ]
   },
   { 
+    slug: "brooklyn-pizza-restaurant", 
+    cover: "/projects/preview/preview-brooklyn-pizza-restaurant.png", 
+    title: "Ресторан «Brooklyn Pizza»", 
+    type: "Ресторан", 
+    location: "Россия, Казань", 
+    year: 2026,
+    designCode: "Эстетика старого Нью-Йорка в современной графике открытой кухни и винтажных деталей.",
+    designPrinciple: "Винтажный контекст — мы упаковали ДНК старого Нью-Йорка в современную городскую оболочку. Благородная текстура дерева, винтажные акценты и ретро-постеры формируют запоминающийся бренд-код. Такой интерьер выглядит дорого, уютно и мгновенно генерирует вирусный контент в соцсетях ваших гостей. \nИнтеграция процессов —Мы превратили рабочую зону поваров в ключевой элемент дизайна. Это оптимизирует скорость обслуживания клиентов, исключает путаницу в заказах и делает пространство живым и динамичным. \nЭргономика посадки — зонирование зала рассчитано на максимальную эффективность каждого квадратного метра. Мы совместили зоны для быстрой пиццы «на ходу» с глубокими, уютными локациями для долгих семейных ужинов, сохранив при этом удобную логистику для работы персонала.",
+    area: "108 м²",
+    timeline: "2 месяца",
+    gallery: [
+      "/projects/brooklyn-pizza-restaurant/1.png", 
+      "/projects/brooklyn-pizza-restaurant/2.png", 
+      "/projects/brooklyn-pizza-restaurant/3.png",
+      "/projects/brooklyn-pizza-restaurant/4.png",
+      "/projects/brooklyn-pizza-restaurant/5.png",
+    ]
+  },
+  { 
     slug: "kainana-restaurant", 
     cover: "/projects/preview/preview-kainana-restaurant.jpg", 
     title: "Ресторан «Кайнана»", 
