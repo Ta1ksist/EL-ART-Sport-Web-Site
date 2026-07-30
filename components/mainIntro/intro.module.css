@@ -30,14 +30,14 @@
 .avatarArea {
   position: relative;
   width: 100%;
-  max-width: 310px;
-  height: 150px;    
+  max-width: 260px;
+  height: 160px;
 }
 
 .miniAvatar {
   position: absolute;
-  width: 46px;
-  height: 46px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   overflow: hidden;
   background-color: var(--color-gray-light, #dde2e9);
@@ -57,26 +57,25 @@
 }
 
 .initials {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-weight: 500;
   color: var(--color-gray-dark, #707781);
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
-
-.pos1 { top: 5px;   left: 0px; }
-.pos2 { top: 70px;  left: 25px; }
-.pos3 { top: 10px;  left: 65px; }
-.pos4 { top: 75px;  left: 105px; }
-.pos5 { top: 15px;  left: 145px; }
-.pos6 { top: 80px;  left: 185px; }
-.pos7 { top: 10px;  left: 225px; }
-.pos8 { top: 70px;  left: 260px; }
+.pos1 { top: 0px;  left: 0px; }
+.pos2 { top: 60px; left: 10px; }
+.pos3 { top: 20px; left: 60px; }
+.pos4 { top: 90px; left: 70px; }
+.pos5 { top: 0px;  left: 120px; }
+.pos6 { top: 70px; left: 140px; }
+.pos7 { top: 10px; left: 190px; }
+.pos8 { top: 80px; left: 195px; }
 
 .description {
   font-family: var(--font-main), sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1.3;
   color: var(--color-black, #212121);
   margin: 0;
@@ -84,7 +83,7 @@
 
 @media (min-width: 640px) {
   .description {
-    font-size: 1.85rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -104,29 +103,29 @@
   }
 
   .description {
-    font-size: 36px;
+    font-size: 26px;
   }
 
   .avatarArea {
-    max-width: 520px;
-    height: 180px;
+    max-width: 420px;
+    height: 190px;
   }
 
   .miniAvatar {
-    width: 64px;
-    height: 64px;
+    width: 78px;
+    height: 78px;
   }
 
   .initials {
-    font-size: 1.15rem;
+    font-size: 1.3rem
   }
 
-  .pos1 { top: 15px;  left: 5px; }
-  .pos2 { top: 95px;  left: 50px; }
-  .pos3 { top: 5px;   left: 120px; }
-  .pos4 { top: 100px; left: 190px; }
-  .pos5 { top: 15px;  left: 260px; }
-  .pos6 { top: 95px;  left: 330px; }
-  .pos7 { top: 5px;   left: 400px; }
-  .pos8 { top: 85px;  left: 455px; }
+  .pos1 { top: 0px;   left: 0px; }
+  .pos2 { top: 90px;  left: 20px; }
+  .pos3 { top: 20px;  left: 100px; }
+  .pos4 { top: 100px; left: 130px; }
+  .pos5 { top: 0px;   left: 210px; }
+  .pos6 { top: 95px;  left: 240px; }
+  .pos7 { top: 15px;  left: 310px; }
+  .pos8 { top: 100px; left: 330px; }
 }
