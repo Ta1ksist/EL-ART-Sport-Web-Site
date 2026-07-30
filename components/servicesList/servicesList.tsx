@@ -1,117 +1,37 @@
 import styles from "./servicesList.module.css";
 import Image from "next/image";
-interface ServiceItem {
-  n: string;
-  title: string;
-  cover: string;
-  lead: string;
-  includes: string[];
-  delivers: string;
-}
-
-const SERVICES: ServiceItem[] = [
-  {
-    n: "01",
-    title: "Бизнес-план",
-    cover: "/servicesList/bussines-plan.png",
-    lead: "Расчет инвестиций, окупаемости, операционных расходов и создание финансовой модели будущего комплекса.",
-    includes: [
-      "Краткий обзор проекта.",
-      "Информация об инициаторах проекта.",
-      "Существо предлагаемого проекта.",
-      "Анализ положения дел в отрасли.",
-      "Анализ рынка и спроса на услуги.",
-      "Организационный план.",
-      "Финансовый план.",
-      "Оценка рисков.",
-      "Расчетные таблицы Финансово-экономической модели проекта.",
-    ],
-    delivers: "Полное экономическое обоснование вашего проекта с анализом рынка, оценкой рисков и расчетными таблицами окупаемости — надежный фундамент для запуска бизнеса и разработки его будущего дизайна.",
-  },
-  {
-    n: "02",
-    title: "Подбор помещения",
-    cover: "/servicesList/selection-of-premises.png",
-    lead: "Помощь в подборе. Анализ локаций и оценка пригодности здания под конкретные спортивные дисциплины.",
-    includes: [
-      "Схема привязки пятна застройки по угламтерритории.",
-      "Учет существующих уклонов и рельефа местности.",
-      "Определение принципиальной возможности использования всей площади.",
-      "Маркерное зонирование: основное строение, парковка, въезд, зеленая зона.",
-      "Вывод о необходимости (или отсутствии необходимости) полной проработки всего участка.",
-    ],
-    delivers: "Инженерный экспресс-план объекта с зонированием и точной посадкой под ваши задачи, который покажет реальный потенциал площади еще до заключения договора аренды или покупки."
-  },
-  {
-    n: "03",
-    title: "Дизайн-проект",
-    cover: "/servicesList/design-project.png",
-    lead: "Разрабатываем уникальную концепцию комплекса, в которой клиенту хочется остаться. Создаем атмосферу, которая продает абонементы и удерживает гостей.",
-    includes: [
-      "Концептуальный блок: разработка дизайн-кода, планировочных решений, обмерный план и интерактивная 3D-модель пространства.",
-      "Технический блок: детальные планы демонтажа/монтажа, схемы электрики, освещения, привязки выключателей и сантехники.",
-      "Строительный блок: чертежи полов и потолков, развертки стен, 3D-схемы заказной мебели и спецификации материалов.",
-      "Визуальный блок: интерьерные мудборды, черновые эскизы и финальные фотореалистичные 3D-визуализации.",
-    ],
-    delivers: "Продуманный до мелочей дизайн-проект, который сочетает в себе выверенную эргономику, коммерческую эффективность пространства и готовую инструкцию для строительной бригады.",
-  },
-  {
-    n: "04",
-    title: "Архитектурный проект",
-    cover: "/servicesList/arch-project.png",
-    lead: "Создаем знаковую архитектуру, которая формирует правильное первое впечатление. Соединяем масштабный, притягательный экстерьер с технологичным и безопасным пространством внутри здания.",
-    includes: [
-      "Разработки концепций.",
-      "Проект архитектурных решений.",
-      "Авторский надзор.",
-    ],
-    delivers: "Продуманный архитектурный проект с точными расчетами нагрузок и инженерии, который гарантирует успешное прохождение проверок, безопасность здания и идеальную логистику для посетителей.",
-  },
-  {
-    n: "05",
-    title: "Управление",
-    cover: "/servicesList/control.png",
-    lead: "Экспертное сопровождение на всех этапах: от юридических тонкостей до подбора спортивного оборудования.",
-    includes: [
-      "Привлечение инвестиций.",
-      "Консталтинг.",
-      "Девелопмент/управление.",
-    ],
-    delivers: "Полное экспертное и юридическое сопровождение вашего проекта от поиска инвестиций до запуска, которое избавит вас от операционной рутины, ошибок в управлении и задержек при открытии.",
-  },
-];
+import { SERVICES } from "@/lib/services";
 
 export default function ServicesList() {
   return (
     <section className={styles.servicesSection}>
       <div className={styles.centerWrapper}>
         <div className={styles.servicesGrid}>
-          
-        {SERVICES.map((s) => (
-          <div key={s.n} className={styles.serviceCard}>
-
-            {s.cover && (
-              <div className={styles.coverWrap}>
-                 <Image
+          {SERVICES.map((s) => (
+            <div key={s.n} className={styles.serviceCard}>
+              {s.cover && (
+                <div className={styles.coverWrap}>
+                  <Image
                     src={s.cover}
                     alt={s.title}
                     className={styles.coverImage}
                     fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    quality={90}
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     priority={s.n === "01"}
                   />
+                </div>
+              )}
+
+              <div className={styles.cardHeader}>
+                <div className={styles.cardNumber}>{s.n}</div>
+                <div className={styles.eyebrow}>Услуга</div>
               </div>
-            )}
 
-            <div className={styles.cardHeader}>
-              <div className={styles.cardNumber}>{s.n}</div>
-              <div className={styles.eyebrow}>Услуга</div>
-            </div>
+              <h2 className={styles.cardTitle}>{s.title}</h2>
+              <p className={styles.cardLead}>{s.lead}</p>
 
-            <h2 className={styles.cardTitle}>{s.title}</h2>
-            <p className={styles.cardLead}>{s.lead}</p>
-
-            <div className={styles.innerDivider}>
+              <div className={styles.innerDivider}>
                 <div className={styles.innerLabel}>Что входит в состав</div>
                 <ul className={styles.includesList}>
                   {s.includes.map((item) => (
@@ -122,9 +42,11 @@ export default function ServicesList() {
                   ))}
                 </ul>
               </div>
-          </div>
-        ))}
-
+            </div>
+          ))}
+          {SERVICES.length % 2 !== 0 && (
+            <div className={styles.gridFiller} aria-hidden="true" />
+          )}
         </div>
       </div>
     </section>

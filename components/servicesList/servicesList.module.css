@@ -52,6 +52,15 @@
   transform: scale(1.035);
 }
 
+.serviceCard:last-child {
+  grid-column: 1 / -1;
+}
+
+.gridFiller {
+  background-color: var(--color-white, #ffffff);
+  display: none;
+}
+
 .cardHeader {
   display: flex;
   align-items: baseline;
@@ -163,5 +172,9 @@
 
   .cardTitle {
     font-size: 2rem;
+  }
+
+  .gridFiller {
+    display: block;
   }
 }
