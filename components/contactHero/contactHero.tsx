@@ -15,7 +15,7 @@ export default function ContactHero() {
           
           <div className={styles.heroRight}>
             <p className={styles.heroDesc}>
-              Мы изучаем каждый запрос и отвечаем в течение двух рабочих дней. 
+              Мы изучаем каждый запрос и отвечаем в течение двух рабочих дней
             </p>
           </div>
 

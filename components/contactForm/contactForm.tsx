@@ -69,7 +69,7 @@ export default function ContactForm() {
                         value="no" 
                         className={styles.radioInput} 
                       />
-                      <span className={styles.radioCustom}>Нет, только планируется</span>
+                      <span className={styles.radioCustom}>Нет, есть земельный участок</span>
                     </label>
                   </div>
                 </div>
