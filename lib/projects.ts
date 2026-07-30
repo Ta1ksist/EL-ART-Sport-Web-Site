@@ -178,6 +178,25 @@ export const PROJECTS: Project[] = [
     ]
   },
   { 
+    slug: "apartment-savin-house", 
+    cover: "/projects/preview/preview-apartment-savin-house.jpg", 
+    title: "Квартира. ЖК «Savin House»", 
+    type: "Жилой", 
+    location: "Россия, Казань", 
+    year: 2025,
+    designCode: "Пространство благородного минимализма с точечным ретро-акцентом. Лаконичная монохромная база подчеркивает винтажный характер мебели, культового света и раскладки паркета .",
+    designPrinciple: "Чистота базы — утилитарная нагрузка интерьера полностью замаскирована под архитектурные панели. Отсутствие лишних деталей разгружает пространство и выводит на первый план эстетику жилой зоны. \nЭргономика линий — плавные формы мебели задают интуитивно понятные маршруты движения между зонами. Радиусный диван и акцентный свет связывают гостиную и кухню в единый удобный сценарий для жизни. \nДиалог фактур — характер проекта держится на контрасте материалов. Матовый монохром стен выгодно подчеркивает теплоту натурального дерева и глянцевый блеск культовых ретро-элементов.",
+    area: "75 м²",
+    timeline: "2 месяца",
+    gallery: [
+      "/projects/apartment-savin-house/1.jpg", 
+      "/projects/apartment-savin-house/2.jpg", 
+      "/projects/apartment-savin-house/3.jpg",
+      "/projects/apartment-savin-house/4.jpg",
+      "/projects/apartment-savin-house/5.jpg",
+    ]
+  },
+  { 
     slug: "fairytale-restaurant", 
     cover: "/projects/preview/preview-rfairytale-restaurant.jpg", 
     title: "Ресторан «Сказка»", 
