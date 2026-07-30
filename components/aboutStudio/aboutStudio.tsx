@@ -11,7 +11,7 @@ export default function AboutStudio() {
             <h1 className={styles.mainTitle}>
               Проектируем пространства для бизнеса,<br />
               <span className={styles.italicText}>
-                где функция управляет красотой.
+                где функция управляет красотой
               </span>
             </h1>
           </div>

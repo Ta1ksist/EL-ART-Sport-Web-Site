@@ -2,17 +2,8 @@
 
 import Image from "next/image";
 import styles from "./intro.module.css";
+import { TEAM } from "@/lib/team"
 
-const TEAM_AVATARS = [
-  { name: 'Закирова Элина', img: '/Team/Закирова Элина.png' },
-  { name: 'Гадецкая Елизавета', img: '/Team/Гадецкая Елизавета.png' },
-  { name: 'Гадецкая Диана', img: '/Team/Гадецкая Диана.png' },
-  { name: 'Герасимова Дарья', img: '/Team/Герасимова Дарья.png' },
-  { name: 'Фролова Елизавета', img: '/Team/Фролова Елизавета.png' },
-  { name: 'Попова Дарина', img: '/Team/Попова Дарина.png' },
-  { name: 'Худяк Дарья', img: '' },
-  { name: 'Хмара Елизавета', img: '/Team/Хмара Елизавета.png' },
-];
 
 export default function Intro() {
   return (
@@ -23,7 +14,7 @@ export default function Intro() {
           <div className={styles.eyebrow}>Наша студия</div>
           
           <div className={styles.avatarArea}>
-            {TEAM_AVATARS.map((member, index) => (
+            {TEAM.map((member, index) => (
               <div 
                 key={member.name} 
                 className={`${styles.miniAvatar} ${styles[`pos${index + 1}`]}`}
