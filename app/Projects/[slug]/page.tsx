@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import styles from "./project.module.css";
 import { getProjectBySlug, getAllProjects } from "@/lib/projects";
+import { getProjectGallery } from "@/lib/gallery";
 import ProjectHero from "@/components/projectHero/projectHero";
 import ProjectBrief from "@/components/projectBrief/projectBrief";
 import ProjectGallery from "@/components/projectGallery/projectGallery";
@@ -53,12 +54,14 @@ export default async function ProjectDetail({ params }: PageProps) {
   const currentIndex = allProjects.findIndex((proj) => proj.slug === p.slug);
   const next = allProjects[(currentIndex + 1) % allProjects.length];
 
+  const gallery = await getProjectGallery(p.slug);
+
   return (
     <article>
-      <ProjectHero project={p}/>
-      <ProjectBrief project={p}/>
-      <ProjectGallery project={p}/>
-      <ProjectNext currentSlug={p.slug}/>
+      <ProjectHero project={p} />
+      <ProjectBrief project={p} />
+      <ProjectGallery project={p} images={gallery} />
+      <ProjectNext currentSlug={p.slug} />
     </article>
   );
 }

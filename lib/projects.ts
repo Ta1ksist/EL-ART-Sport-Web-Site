@@ -10,7 +10,7 @@ export interface Project {
   designPrinciple?: string;
   area: string;
   timeline?: string;
-  gallery?: string[];
+  // gallery?: string[];
 }
 
 export const PROJECTS: Project[] = [
@@ -55,13 +55,13 @@ export const PROJECTS: Project[] = [
     designPrinciple: "Открытая экосистема — создавая первый падел-клуб в Астрахани, мы сделали ставку на абсолютную прозрачность. Игровые корты и зоны отдыха бесшовно соединены. Это позволяет гостям легко считывать правила игры и проникаться атмосферой корта еще до того, как они возьмут в руки ракетку. \nЛогика гостеприимства — интерьер спроектирован так, чтобы убрать любое стеснение у новичков. Маршрут от ресепшена, открытой зоны примерки мерча и лаунжа интуитивно понятен. Мы ушли от концепции закрытых спортивных залов в сторону дружелюбного и комфортного пространства для жизни и общения.",
     area: "1800 м²",
     timeline: "3 месяца",
-    gallery: [
-      "/projects/place-padel-astr/1.jpg", 
-      "/projects/place-padel-astr/2.jpg", 
-      "/projects/place-padel-astr/3.jpg",
-      "/projects/place-padel-astr/4.jpg",
-      "/projects/place-padel-astr/5.jpg",
-    ]
+    // gallery: [
+    //   "/projects/place-padel-astr/1.jpg", 
+    //   "/projects/place-padel-astr/2.jpg", 
+    //   "/projects/place-padel-astr/3.jpg",
+    //   "/projects/place-padel-astr/4.jpg",
+    //   "/projects/place-padel-astr/5.jpg",
+    // ]
   },
   { 
     slug: "pash-padel-msc", 
@@ -74,13 +74,13 @@ export const PROJECTS: Project[] = [
     designPrinciple: "Статус — это то, что считывается с первой секунды. Мы создали пространство, которое мгновенно заявляет о высоком уровне клуба. Сочетание глубоких терракотовых оттенков, геометрии света и текстуры бетона формирует премиальный образ объекта и отстраивает бизнес от обычных игровых залов. \nСценарий гостя — мы продумали каждую точку контакта. Движение посетителей, акустика в зоне ожидания, правильный свет, который не слепит и создает уют — все это складывается в единый бесшовный опыт, превращающий случайного игрока в постоянного резидента клуба.",
     area: "3500 м²",
     timeline: "3 месяца",
-    gallery: [
-      "/projects/pash-padel-msc/1.jpg", 
-      "/projects/pash-padel-msc/2.jpg", 
-      "/projects/pash-padel-msc/3.jpg",
-      "/projects/pash-padel-msc/4.jpg",
-      "/projects/pash-padel-msc/5.jpg",
-    ]
+    // gallery: [
+    //   "/projects/pash-padel-msc/1.jpg", 
+    //   "/projects/pash-padel-msc/2.jpg", 
+    //   "/projects/pash-padel-msc/3.jpg",
+    //   "/projects/pash-padel-msc/4.jpg",
+    //   "/projects/pash-padel-msc/5.jpg",
+    // ]
   },
   { 
     slug: "brooklyn-pizza-restaurant", 
@@ -93,13 +93,13 @@ export const PROJECTS: Project[] = [
     designPrinciple: "Винтажный контекст — мы упаковали ДНК старого Нью-Йорка в современную городскую оболочку. Благородная текстура дерева, винтажные акценты и ретро-постеры формируют запоминающийся бренд-код. Такой интерьер выглядит дорого, уютно и мгновенно генерирует вирусный контент в соцсетях ваших гостей. \nИнтеграция процессов —Мы превратили рабочую зону поваров в ключевой элемент дизайна. Это оптимизирует скорость обслуживания клиентов, исключает путаницу в заказах и делает пространство живым и динамичным. \nЭргономика посадки — зонирование зала рассчитано на максимальную эффективность каждого квадратного метра. Мы совместили зоны для быстрой пиццы «на ходу» с глубокими, уютными локациями для долгих семейных ужинов, сохранив при этом удобную логистику для работы персонала.",
     area: "108 м²",
     timeline: "2 месяца",
-    gallery: [
-      "/projects/brooklyn-pizza-restaurant/1.png", 
-      "/projects/brooklyn-pizza-restaurant/2.png", 
-      "/projects/brooklyn-pizza-restaurant/3.png",
-      "/projects/brooklyn-pizza-restaurant/4.png",
-      "/projects/brooklyn-pizza-restaurant/5.png",
-    ]
+    // gallery: [
+    //   "/projects/brooklyn-pizza-restaurant/1.png", 
+    //   "/projects/brooklyn-pizza-restaurant/2.png", 
+    //   "/projects/brooklyn-pizza-restaurant/3.png",
+    //   "/projects/brooklyn-pizza-restaurant/4.png",
+    //   "/projects/brooklyn-pizza-restaurant/5.png",
+    // ]
   },
   { 
     slug: "kainana-restaurant", 
@@ -112,13 +112,13 @@ export const PROJECTS: Project[] = [
     designPrinciple: "Концептуальный свет — дизайн как способ по-новому рассказать историю бренда. В проекте «Кайнана» мы превратили традиционные ковры в огромные светящиеся люстры под потолком. Это уникальное световое решение ломает стереотипы об этно-ресторанах, привлекает внимание гостей и делает интерьер невероятно фотогеничным для соцсетей. \nКоммерческая эргономика — планировка зала оптимизирована под стандарты ресторанного бизнеса. Расположение центральных столов и пристенных мягких диванов позволяет легко адаптировать посадку под компании любого формата, от небольших встреч до крупных банкетов, не нарушая логистику работы официантов. \nЭстетика уюта — мы соединили брутальные деревянные пилоны, обилие живой зелени и классическую европейскую мебель. Такой контраст материалов создает теплую, благородную атмосферу вне времени, транслирующую ценности кавказского гостеприимства в современном городском контексте.",
     area: "145 м²",
     timeline: "3 месяца",
-    gallery: [
-      "/projects/kainana-restaurant/1.jpg", 
-      "/projects/kainana-restaurant/2.jpg", 
-      "/projects/kainana-restaurant/3.jpg",
-      "/projects/kainana-restaurant/4.jpg",
-      "/projects/kainana-restaurant/5.jpg",
-    ]
+    // gallery: [
+    //   "/projects/kainana-restaurant/1.jpg", 
+    //   "/projects/kainana-restaurant/2.jpg", 
+    //   "/projects/kainana-restaurant/3.jpg",
+    //   "/projects/kainana-restaurant/4.jpg",
+    //   "/projects/kainana-restaurant/5.jpg",
+    // ]
   },
   { 
     slug: "national-cuisine-hot", 
@@ -131,13 +131,13 @@ export const PROJECTS: Project[] = [
     designPrinciple: "Актуальная айдентика — мы переосмыслили заведение татарской национальной кухни, уйдя от привычных этно-шаблонов к современному городскому формату. Национальная идентичность здесь считывается тонко: через теплые оттенки дерева, орнаментальные намеки в геометрии мебели и мягкую форму светильников, напоминающих традиционные элементы. Этот интерьер делает национальную кухню модной и понятной для молодой аудитории. \nКоммерческий фокус и логистика — формат современного бистро требует высокой скорости обслуживания. Мы спроектировали открытую линейную стойку выдачи, где каждый этап пути заказа интуитивно понятен гостю. Зона витрины с выпечкой, открытая тепловая станция и холодильник с напитками выстроены в единый бесшовный маршрут, который стимулирует спонтанные продажи и исключает очереди в пиковые часы. \nСценарий гостеприимства — интерьер транслирует тепло и домашний уют, заложенные в ДНК татарской кулинарной культуры. Мягкие световые акценты над зоной выдачи и ритмичная текстура деревянных панелей создают дружелюбную, «прогретую» атмосферу, которая привлекает прохожих через панорамные окна и вызывает желание зайти внутрь.",
     area: "80 м²",
     timeline: "2 месяца",
-    gallery: [
-      "/projects/national-cuisine-hot/1.jpg", 
-      "/projects/national-cuisine-hot/2.jpg", 
-      "/projects/national-cuisine-hot/3.jpg",
-      "/projects/national-cuisine-hot/4.jpg",
-      "/projects/national-cuisine-hot/5.jpg",
-    ]
+    // gallery: [
+    //   "/projects/national-cuisine-hot/1.jpg", 
+    //   "/projects/national-cuisine-hot/2.jpg", 
+    //   "/projects/national-cuisine-hot/3.jpg",
+    //   "/projects/national-cuisine-hot/4.jpg",
+    //   "/projects/national-cuisine-hot/5.jpg",
+    // ]
   },
   { 
     slug: "studio-flex-msc", 
@@ -150,13 +150,13 @@ export const PROJECTS: Project[] = [
     designPrinciple: "Пространство было разработано многоуровневым, часть функций перенесены на второй этаж: тренерские, технические узлы и комната отдыха для персонала.",
     area: "450 м²",
     timeline: "3 месяца",
-    gallery: [
-      "/projects/studio-flex-msc/1.jpg", 
-      "/projects/studio-flex-msc/2.jpg", 
-      "/projects/studio-flex-msc/3.jpg", 
-      "/projects/studio-flex-msc/4.jpg",
-      "/projects/studio-flex-msc/5.jpg"
-    ]
+    // gallery: [
+    //   "/projects/studio-flex-msc/1.jpg", 
+    //   "/projects/studio-flex-msc/2.jpg", 
+    //   "/projects/studio-flex-msc/3.jpg", 
+    //   "/projects/studio-flex-msc/4.jpg",
+    //   "/projects/studio-flex-msc/5.jpg"
+    // ]
   },
   { 
     slug: "rocket-padel-kemerovo", 
@@ -169,14 +169,14 @@ export const PROJECTS: Project[] = [
     designPrinciple: "Бизнес - это про окупаемость и эффективность использования каждого уголка помещения. Каждый сантиметр пространства должен работать и приносить пользу. \nЭргономика - это про комфорт человека внутри пространства. Мы мысленно проживаем каждый возможный маршрут гостя, чтобы ему везде было удобно, понятно и приятно находиться. \nКонцепция – это создании истории. Дизайн для нас не просто оформление, а целый мир со своим характером, атмосферой и сюжетностью.",
     area: "2600 м²",
     timeline: "3 месяца",
-    gallery: [
-      "/projects/rocket-padel-kem/1.jpg", 
-      "/projects/rocket-padel-kem/2.jpg", 
-      "/projects/rocket-padel-kem/3.jpg",
-      "/projects/rocket-padel-kem/4.jpg",
-      "/projects/rocket-padel-kem/5.jpg",
-      "/projects/rocket-padel-kem/6.png", 
-    ]
+    // gallery: [
+    //   "/projects/rocket-padel-kem/1.jpg", 
+    //   "/projects/rocket-padel-kem/2.jpg", 
+    //   "/projects/rocket-padel-kem/3.jpg",
+    //   "/projects/rocket-padel-kem/4.jpg",
+    //   "/projects/rocket-padel-kem/5.jpg",
+    //   "/projects/rocket-padel-kem/6.png", 
+    // ]
   },
   { 
     slug: "rocket-padel", 
@@ -189,13 +189,13 @@ export const PROJECTS: Project[] = [
     designPrinciple: "Бизнес - это про окупаемость и эффективность использования каждого уголка помещения. Каждый сантиметр пространства должен работать и приносить пользу. \nЭргономика - это про комфорт человека внутри пространства. Мы мысленно проживаем каждый возможный маршрут гостя, чтобы ему везде было удобно, понятно и приятно находиться. \nКонцепция – это создании истории. Дизайн для нас не просто оформление, а целый мир со своим характером, атмосферой и сюжетностью.",
     area: "3000 м²",
     timeline: "3 месяца",
-    gallery: [
-      "/projects/rocket-padel-vlg/1.png", 
-      "/projects/rocket-padel-vlg/2.png", 
-      "/projects/rocket-padel-vlg/3.png",
-      "/projects/rocket-padel-vlg/4.png",
-      "/projects/rocket-padel-vlg/5.png",
-    ]
+    // gallery: [
+    //   "/projects/rocket-padel-vlg/1.png", 
+    //   "/projects/rocket-padel-vlg/2.png", 
+    //   "/projects/rocket-padel-vlg/3.png",
+    //   "/projects/rocket-padel-vlg/4.png",
+    //   "/projects/rocket-padel-vlg/5.png",
+    // ]
   },
   { 
     slug: "apartment-savin-house", 
@@ -208,13 +208,13 @@ export const PROJECTS: Project[] = [
     designPrinciple: "Чистота базы — утилитарная нагрузка интерьера полностью замаскирована под архитектурные панели. Отсутствие лишних деталей разгружает пространство и выводит на первый план эстетику жилой зоны. \nЭргономика линий — плавные формы мебели задают интуитивно понятные маршруты движения между зонами. Радиусный диван и акцентный свет связывают гостиную и кухню в единый удобный сценарий для жизни. \nДиалог фактур — характер проекта держится на контрасте материалов. Матовый монохром стен выгодно подчеркивает теплоту натурального дерева и глянцевый блеск культовых ретро-элементов.",
     area: "75 м²",
     timeline: "2 месяца",
-    gallery: [
-      "/projects/apartment-savin-house/1.jpg", 
-      "/projects/apartment-savin-house/2.jpg", 
-      "/projects/apartment-savin-house/3.jpg",
-      "/projects/apartment-savin-house/4.jpg",
-      "/projects/apartment-savin-house/5.jpg",
-    ]
+    // gallery: [
+    //   "/projects/apartment-savin-house/1.jpg", 
+    //   "/projects/apartment-savin-house/2.jpg", 
+    //   "/projects/apartment-savin-house/3.jpg",
+    //   "/projects/apartment-savin-house/4.jpg",
+    //   "/projects/apartment-savin-house/5.jpg",
+    // ]
   },
   { 
     slug: "fairytale-restaurant", 
@@ -227,13 +227,13 @@ export const PROJECTS: Project[] = [
     designPrinciple: "Концепция вне времени — для ресторана «Сказка» мы разработали минималистичный визуальный код с глубоким подтекстом. Образ сказочного леса передан через чистые природные формы: фактурные спилы деревьев, деликатную пластику стен и теплую приглушенную гамму, которая формирует статусную и фотогеничную среду. \nУмная эргономика и трансформация — в основе планировочного решения лежит функциональность. С помощью текстильных кулис мы создали адаптивный интерьер, который подстраивается под посадку. Гость всегда чувствует себя защищенно и комфортно, независимо от того, пришел он на уединенный деловой обед или на шумный банкет. \nВизуальный маркетинг — каждая деталь интерьера работает как самостоятельный арт-объект. Подсвеченные деревянные инсталляции и художественная лепка на стенах привлекают внимание в соцсетях, создавая мощный органический охват и выделяя проект среди конкурентов на ресторанном рынке.",
     area: "40 м²",
     timeline: "2 месяца",
-    gallery: [
-      "/projects/fairytale-restaurant/1.jpg", 
-      "/projects/fairytale-restaurant/2.jpg", 
-      "/projects/fairytale-restaurant/3.jpg",
-      "/projects/fairytale-restaurant/4.jpg",
-      "/projects/fairytale-restaurant/5.jpg",
-    ]
+    // gallery: [
+    //   "/projects/fairytale-restaurant/1.jpg", 
+    //   "/projects/fairytale-restaurant/2.jpg", 
+    //   "/projects/fairytale-restaurant/3.jpg",
+    //   "/projects/fairytale-restaurant/4.jpg",
+    //   "/projects/fairytale-restaurant/5.jpg",
+    // ]
   },
   { 
     slug: "house-garden-eagle", 
@@ -246,13 +246,13 @@ export const PROJECTS: Project[] = [
     designPrinciple: "Фактурная база — эстетика дома построена на тактильном богатстве натуральных материалов. Сочетание дерева, шпона высотой в потолок и брутального колотого камня заземляет масштабное пространство, превращая его в надежное и статусное семейное пространство. \nОбволакивающий свет — мы продумали многоуровневое освещение, которое создает медитативную загородную атмосферу. Крупные купольные светильники и скрытые световые линии мягко рассеивают лучи по поверхностям, расставляя деликатные акценты в вечернее время. \nФилософия комфорта — интерьер спроектирован как защищенное пространство для жизни. От открытой, располагающей к общению гостиной со вторым светом до приватных детских зон с мягкой буклированной отделкой — каждая деталь дарит ощущение подлинного домашнего очага.",
     area: "130 м²",
     timeline: "3 месяца",
-    gallery: [
-      "/projects/house-garden-eagle/1.jpg", 
-      "/projects/house-garden-eagle/2.jpg", 
-      "/projects/house-garden-eagle/3.jpg",
-      "/projects/house-garden-eagle/4.jpg",
-      "/projects/house-garden-eagle/5.jpg",
-    ]
+    // gallery: [
+    //   "/projects/house-garden-eagle/1.jpg", 
+    //   "/projects/house-garden-eagle/2.jpg", 
+    //   "/projects/house-garden-eagle/3.jpg",
+    //   "/projects/house-garden-eagle/4.jpg",
+    //   "/projects/house-garden-eagle/5.jpg",
+    // ]
   },
   { 
     slug: "apartment-tau-hose", 
@@ -265,13 +265,13 @@ export const PROJECTS: Project[] = [
     designPrinciple: "Управление объемом — мы использовали скрытые световые сценарии для визуального изменения пропорций квартиры. Вертикальные линии подсветки размывают реальные границы стен, наполняя компактное жилье ощущением воздуха и свободы. \nРадиусная эргономика — интеграция плавных форм и скругленных элементов позволила оптимизировать логистику движений на узких участках. Отсутствие острых углов сделало транзитные зоны удобными и безопасными, а изящные темные светильники локально обозначили зону отдыха.  \nБаланс контрастов — характер проекта построен на игре противоположностей. Чистая светлая палитра стен выгодно контрастирует с графичной черной мебелью и строгими тонкими линиями светильников, превращая компактное пространство в стильное городское жилье.",
     area: "55 м²",
     timeline: "2 месяца",
-    gallery: [
-      "/projects/apartment-tau-hose/1.png", 
-      "/projects/apartment-tau-hose/2.png", 
-      "/projects/apartment-tau-hose/3.png",
-      "/projects/apartment-tau-hose/4.png",
-      "/projects/apartment-tau-hose/5.png",
-    ]
+    // gallery: [
+    //   "/projects/apartment-tau-hose/1.png", 
+    //   "/projects/apartment-tau-hose/2.png", 
+    //   "/projects/apartment-tau-hose/3.png",
+    //   "/projects/apartment-tau-hose/4.png",
+    //   "/projects/apartment-tau-hose/5.png",
+    // ]
   },
 ];
 
