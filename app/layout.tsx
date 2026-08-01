@@ -15,17 +15,17 @@ const montserrat = Montserrat({
 const vivita = localFont({
   src: [
     {
-      path: '../fonts/Vivita/WOFF2/VIVITA-Regular.woff2',
+      path: './fonts/Vivita/WOFF2/VIVITA-Regular.woff2',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../fonts/Vivita/WOFF2/VIVITA-Bold.woff2',
+      path: './fonts/Vivita/WOFF2/VIVITA-Bold.woff2',
       weight: '700',
       style: 'normal',
     },
   ],
-  variable: '--font-vivita', 
+  variable: '--font-vivita',
   display: 'swap',
 })
 
@@ -34,14 +34,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
- return (
+  return (
     <html lang="ru" className={`${montserrat.variable} ${vivita.variable}`}>
       <body>
         <Navigation />
         <main className="main-content">{children}</main>
+        <Footer />
         <CookieBanner />
       </body>
-      <Footer />
     </html>
   );
 }

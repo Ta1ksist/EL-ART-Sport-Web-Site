@@ -145,7 +145,7 @@ export const PROJECTS: Project[] = [
   },
   { 
     slug: "fairytale-restaurant", 
-    cover: "preview/preview-rfairytale-restaurant.jpg", 
+    cover: "/preview/preview-rfairytale-restaurant.jpg", 
     title: "Ресторан «Сказка»", 
     type: "Ресторан", 
     location: "Россия, Казань", 

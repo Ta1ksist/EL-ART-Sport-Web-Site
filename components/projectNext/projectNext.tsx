@@ -31,7 +31,7 @@ export default function ProjectNext({ currentSlug }: ProjectNextProps) {
             <div>
               <h3 className={styles.nextProjectTitle}>{next.title}</h3>
               <div className={styles.nextMeta}>
-                {next.style} · {next.location}
+                {next.type} · {next.area} · {next.location}
               </div>
               <div className={`${styles.linkUnderline} ${styles.nextActionLink}`}>
                 Смотреть проект →
