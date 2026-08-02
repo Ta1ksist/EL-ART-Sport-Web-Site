@@ -91,7 +91,7 @@ export default function FAQPage() {
               <div
                 className={styles.answerWrapper}
                 style={{
-                  maxHeight: isOpen ? '300px' : '0px',
+                  maxHeight: isOpen ? '1000px' : '0px',
                 }}
               >
                 <div className={styles.answer}>
