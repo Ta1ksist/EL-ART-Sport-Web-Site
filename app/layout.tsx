@@ -1,9 +1,18 @@
+import type { Metadata } from "next";
 import Footer from "@/components/footer/footer";
 import "./globals.css";
 import { Montserrat } from 'next/font/google';
 import Navigation from "@/components/navigation/navigation";
 import CookieBanner from "@/components/cookieBanner/cookieBanner";
 
+export const metadata: Metadata = {
+  metadataBase: new URL('https://elart.ru'),
+  title: {
+    default: "EL'ART — архитектура и дизайн интерьеров",
+    template: "%s — EL'ART",
+  },
+  description: "Проектируем спортивные комплексы, рестораны и жилые пространства под ключ: от концепции до сдачи объекта.",
+};
 import localFont from 'next/font/local';
 
 const montserrat = Montserrat({
