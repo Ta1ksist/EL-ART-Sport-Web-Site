@@ -12,6 +12,15 @@ interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
+export function generateStaticParams() {
+  return getAllProjects()
+    .filter((p) => !p.isSoon)
+    .map((p) => ({ slug: p.slug }));
+}
+
+export const revalidate = 3600;
+
+
 export async function generateMetadata({ params }: PageProps) {
   const { slug } = await params;
   const p = getProjectBySlug(slug);
