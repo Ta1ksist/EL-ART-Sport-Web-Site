@@ -108,7 +108,7 @@ export const PROJECTS: Project[] = [
     timeline: "3 месяца",
   },
   { 
-    slug: "rocket-padel-kemerovo", 
+    slug: "rocket-padel-kem", 
     cover: "/preview/preview-rocket-padel-kem.jpg", 
     title: "Падел-комплекс «Rocket padel»", 
     type: "Падел-комплекс", 
@@ -120,7 +120,7 @@ export const PROJECTS: Project[] = [
     timeline: "3 месяца",
   },
   { 
-    slug: "rocket-padel", 
+    slug: "rocket-padel-vlg", 
     cover: "/preview/preview-rocket-padel-vlg.png", 
     title: "Падел-комплекс «Rocket padel»", 
     type: "Падел-комплекс", 
