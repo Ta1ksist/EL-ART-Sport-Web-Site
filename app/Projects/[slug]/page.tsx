@@ -2,11 +2,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import styles from "./project.module.css";
 import { getProjectBySlug, getAllProjects } from "@/lib/projects";
-import { getProjectGallery } from "@/lib/gallery";
+import { getProjectDrawings, getProjectGallery } from "@/lib/gallery";
 import ProjectHero from "@/components/projectHero/projectHero";
 import ProjectBrief from "@/components/projectBrief/projectBrief";
 import ProjectGallery from "@/components/projectGallery/projectGallery";
 import ProjectNext from "@/components/projectNext/projectNext";
+import ProjectDrawings from "@/components/projectDrawings/projectDrawings";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -64,12 +65,14 @@ export default async function ProjectDetail({ params }: PageProps) {
   const next = allProjects[(currentIndex + 1) % allProjects.length];
 
   const gallery = await getProjectGallery(p.slug);
+  const drawings = await getProjectDrawings(p.slug);
 
   return (
     <article>
       <ProjectHero project={p} />
       <ProjectBrief project={p} />
       <ProjectGallery project={p} images={gallery} />
+      <ProjectDrawings project={p} drawings={drawings} />
       <ProjectNext currentSlug={p.slug} />
     </article>
   );
