@@ -52,10 +52,6 @@
   transform: scale(1.035);
 }
 
-/* .serviceCard:last-child {
-  grid-column: 1 / -1;
-} */
-
 .gridFiller {
   background-color: var(--color-white, #ffffff);
   display: none;
@@ -145,6 +141,42 @@
   margin-bottom: 0;
 }
 
+.downloadArea {
+  margin-top: auto;
+  display: flex;
+}
+
+.downloadLink {
+  display: inline-flex;
+  margin-top: 2rem;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-black, #212121);
+  position: relative;
+  cursor: pointer;
+}
+
+.downloadLink::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: currentColor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.downloadLink:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
 @media (prefers-reduced-motion: reduce) {
   .coverImage {
     transition: none;
@@ -177,5 +209,9 @@
   .gridFiller {
     /* display: block; */
     display: flex;
+  }
+
+  .downloadLink {
+    margin-top: 2.5rem;
   }
 }

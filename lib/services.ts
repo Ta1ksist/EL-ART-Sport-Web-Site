@@ -24,7 +24,7 @@ export const SERVICES: Service[] = [
       "Финансовый план.",
       "Расчетные таблицы Финансово-экономической модели проекта.",
     ],
-    download: "",
+    download: "/download/examples/services/bussines-plan-docs.xlsx",
   },
   // {
   //   n: "02",
@@ -51,7 +51,7 @@ export const SERVICES: Service[] = [
       "Спецификация вместимости.",
       "Вывод о необходимости (или отсутствии необходимости) полной проработки всего участка.",
     ],
-    download: "",
+    download: "/download/examples/services/sketch-layout-solution.pdf",
   },
   {
     n: "03",
@@ -65,7 +65,7 @@ export const SERVICES: Service[] = [
       "Маркерное зонирование: основное строение, парковка, въезд, зеленая зона.",
       "Вывод о необходимости (или отсутствии необходимости) полной проработки всего участка.",
     ],
-    download: "",
+    download: "/download/examples/services/sketch-of-the-building-layout.pdf",
   },
   {
     n: "04",
@@ -82,7 +82,6 @@ export const SERVICES: Service[] = [
       "Расчет загрузки по  дневному/ночному населению.",
       "Данные населения по полу/взрасту/доходам более детально.",
     ],
-    download: "",
   },
   {
     n: "05",
@@ -105,7 +104,7 @@ export const SERVICES: Service[] = [
       "Спецификации.",
       "Визуализации и т.д.",
     ],
-    download: "",
+    download: "/download/examples/services/design-project.pdf",
   },
   {
     n: "06",

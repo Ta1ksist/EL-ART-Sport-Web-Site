@@ -1,6 +1,7 @@
 import styles from "./servicesList.module.css";
 import Image from "next/image";
 import { SERVICES } from "@/lib/services";
+import Link from "next/link";
 
 export default function ServicesList() {
   return (
@@ -42,6 +43,21 @@ export default function ServicesList() {
                   ))}
                 </ul>
               </div>
+
+              {s.download && (
+                <div className={styles.downloadArea}>
+                  <a 
+                    href={s.download} 
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.downloadLink}
+                  >
+                    <span>Скачать пример проекта</span>
+                    <span className={styles.downloadIcon}>↓</span>
+                  </a>
+                </div>
+              )}
             </div>
           ))}
           {SERVICES.length % 2 !== 0 && (
