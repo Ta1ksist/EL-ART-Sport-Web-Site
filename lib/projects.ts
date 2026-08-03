@@ -14,12 +14,12 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   // {
-  //   slug: "pash-padel-soon",
-  //   cover: "/projects/soon/pash-padel-soon.png",
-  //   title: "Падел-комплекс «Pash padel»",
-  //   type: "Падел-комплекс",
-  //   area: "3500 м²",
-  //   location: "Россия, Москва",
+  //   slug: "###-###-soon",
+  //   cover: "/preview/soon/###-###-soon.png или .jpg или другое",
+  //   title: "Название проекта",
+  //   type: "Название типа проекта",
+  //   area: "0000 м²",
+  //   location: "Россия, #####",
   //   year: "В разработке",
   //   isSoon: true
   // },
