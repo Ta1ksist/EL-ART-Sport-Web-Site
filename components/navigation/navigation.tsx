@@ -14,8 +14,8 @@ const NAV_LINKS = [
 ];
 
 const LEGAL_LINKS = [
-  { href: '/Legal/privacy-policy', label: 'Политика конфиденциальности' },
-  { href: '/Legal/cookie-policy', label: 'Политика куки-файлов' },
+  { href: '/Legal/Privacy-policy', label: 'Политика конфиденциальности' },
+  { href: '/Legal/Cookie-policy', label: 'Политика куки-файлов' },
 ];
 
 export default function NavBar() {
@@ -62,13 +62,6 @@ export default function NavBar() {
               </Link>
             ))}
           </nav>
-
-          {/* <Link 
-            href="/Contact" 
-            className={`${styles.btnBase} ${styles.btnPrimary} ${isDark && !menuOpen ? styles.btnPrimaryDark : ''}`}
-            >
-            Связаться
-          </Link> */}
 
           <button
             className={`${styles.burgerBtn} ${menuOpen ? styles.burgerActive : ''}`}
