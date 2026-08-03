@@ -52,9 +52,9 @@
   transform: scale(1.035);
 }
 
-.serviceCard:last-child {
+/* .serviceCard:last-child {
   grid-column: 1 / -1;
-}
+} */
 
 .gridFiller {
   background-color: var(--color-white, #ffffff);
@@ -175,6 +175,7 @@
   }
 
   .gridFiller {
-    display: block;
+    /* display: block; */
+    display: flex;
   }
 }
