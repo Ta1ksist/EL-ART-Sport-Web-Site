@@ -30,7 +30,7 @@
 .avatarArea {
   position: relative;
   width: 100%;
-  max-width: 260px;
+  max-width: 310px;
   height: 160px;
 }
 
@@ -72,6 +72,7 @@
 .pos6 { top: 70px; left: 140px; }
 .pos7 { top: 10px; left: 190px; }
 .pos8 { top: 80px; left: 195px; }
+.pos9 { top: 20px; left: 240px; }
 
 .description {
   font-family: var(--font-main), sans-serif;
@@ -107,7 +108,7 @@
   }
 
   .avatarArea {
-    max-width: 420px;
+    max-width: 500px;
     height: 190px;
   }
 
@@ -117,7 +118,7 @@
   }
 
   .initials {
-    font-size: 1.3rem
+    font-size: 1.3rem;
   }
 
   .pos1 { top: 0px;   left: 0px; }
@@ -128,4 +129,5 @@
   .pos6 { top: 95px;  left: 240px; }
   .pos7 { top: 15px;  left: 310px; }
   .pos8 { top: 100px; left: 330px; }
+  .pos9 { top: 20px;  left: 420px; } 
 }

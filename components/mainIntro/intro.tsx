@@ -1,9 +1,6 @@
-'use client';
-
 import Image from "next/image";
 import styles from "./intro.module.css";
-import { TEAM } from "@/lib/team"
-
+import { TEAM } from "@/lib/team";
 
 export default function Intro() {
   return (
@@ -24,8 +21,8 @@ export default function Intro() {
                   <Image 
                     src={member.img} 
                     alt={member.name} 
-                    width={64} 
-                    height={64} 
+                    width={78}
+                    height={78} 
                     className={styles.avatarImg}
                   />
                 ) : (
@@ -44,10 +41,10 @@ export default function Intro() {
         <div>
           <p className={styles.description}>
             Проектируем спортивные комплексы и коммерческие
-             объекты любого масштаба. Опираясь на профильное 
-             архитектурное образование, объединяем строгие технологические
-              стандарты, эргономику и уникальный визуальный стиль. Реализуем проекты под ключ:
-               от первой концепции до финальной сдачи объекта.
+            объекты любого масштаба. Опираясь на профильное 
+            архитектурное образование, объединяем строгие технологические
+            стандарты, эргономику и уникальный визуальный стиль. Реализуем проекты под ключ:
+            от первой концепции до финальной сдачи объекта.
           </p>
         </div>
 
