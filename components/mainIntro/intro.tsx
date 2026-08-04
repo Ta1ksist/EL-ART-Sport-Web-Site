@@ -11,12 +11,8 @@ export default function Intro() {
           <div className={styles.eyebrow}>Наша студия</div>
           
           <div className={styles.avatarArea}>
-            {TEAM.map((member, index) => (
-              <div 
-                key={member.name} 
-                className={`${styles.miniAvatar} ${styles[`pos${index + 1}`]}`}
-                style={{ zIndex: index + 1 }}
-              >
+            {TEAM.map((member) => (
+              <div key={member.name} className={styles.miniAvatar}>
                 {member.img ? (
                   <Image 
                     src={member.img} 

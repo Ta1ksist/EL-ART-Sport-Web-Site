@@ -28,25 +28,29 @@
   color: var(--color-gray-dark, #707781);
 }
 
+
 .avatarArea {
-  position: relative;
-  width: 100%; 
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  justify-items: start; 
+  gap: 1.25rem 0px; 
+  width: 100%;
   max-width: 100%;
-  height: 160px;
 }
 
 .miniAvatar {
-  position: absolute;
-  width: 56px; /* Размер аватарок строго сохранен */
-  height: 56px;
+  position: relative;
+  width: 54px; 
+  height: 54px;
   border-radius: 50%;
   overflow: hidden;
   background-color: var(--color-gray-light, #dde2e9);
   border: 2px solid #ffffff;
-  box-sizing: content-box;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .avatarImg {
@@ -64,16 +68,6 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
-
-.pos1 { top: 0px;  left: 0%; }
-.pos2 { top: 75px; left: calc(12.5% - 7px); }
-.pos3 { top: 20px; left: calc(25% - 14px); }
-.pos4 { top: 95px; left: calc(37.5% - 21px); }
-.pos5 { top: 0px;  left: calc(50% - 28px); }
-.pos6 { top: 80px; left: calc(62.5% - 35px); }
-.pos7 { top: 15px; left: calc(75% - 42px); }
-.pos8 { top: 90px; left: calc(87.5% - 49px); }
-.pos9 { top: 25px; left: calc(100% - 56px); } 
 
 .description {
   font-family: var(--font-main), sans-serif;
@@ -112,26 +106,16 @@
   }
 
   .avatarArea {
-    max-width: 500px;
-    height: 190px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem 0px; 
   }
 
   .miniAvatar {
-    width: 78px;
-    height: 78px;
+    width: 76px;
+    height: 76px;
   }
 
   .initials {
     font-size: 1.3rem;
   }
-
-  .pos1 { top: 0px;   left: 0px; }
-  .pos2 { top: 90px;  left: 20px; }
-  .pos3 { top: 20px;  left: 100px; }
-  .pos4 { top: 100px; left: 130px; }
-  .pos5 { top: 0px;   left: 210px; }
-  .pos6 { top: 95px;  left: 240px; }
-  .pos7 { top: 15px;  left: 320px; }
-  .pos8 { top: 100px; left: 340px; }
-  .pos9 { top: 20px;  left: 420px; }
 }
