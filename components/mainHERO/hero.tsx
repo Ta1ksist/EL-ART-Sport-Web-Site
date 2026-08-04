@@ -14,7 +14,7 @@ export default function MainScene() {
         muted 
         loop 
         playsInline 
-        poster="/preview/preview-hero.png" // Путь к вашей фоновой картинке
+        poster="/preview/preview-hero.png"
       >
         <source src="/HERO/hero.mp4" type="video/mp4" />
       </video>
@@ -33,7 +33,7 @@ export default function MainScene() {
 
       <div className={styles.titleWrap}>
         <p className={styles.titleMain}>EL'ART</p>
-        <p className={styles.titleSub}>СПОРТИВНЫЙ КОМПЛЕКС ПОД КЛЮЧ</p>
+        <p className={styles.titleSub}>СПОРТИВНЫЙ КОМПЛЕКС <br/>ПОД КЛЮЧ</p>
       </div>
     </div>
   );
