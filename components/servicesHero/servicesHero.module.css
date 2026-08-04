@@ -40,11 +40,12 @@
 
 .mainTitle {
   font-family: var(--font-main), sans-serif;
-  font-size: 2.5rem;
-  line-height: 1.1;
+  font-size: 1.85rem; 
+  line-height: 1.15; 
   font-weight: 500;
   margin: 0;
   color: var(--color-black, #212121);
+  letter-spacing: -0.01em;
 }
 
 .heroRight {
@@ -74,6 +75,7 @@
 
   .mainTitle {
     font-size: 4.25rem;
+    line-height: 1.1;
   }
 
   .heroDesc {
