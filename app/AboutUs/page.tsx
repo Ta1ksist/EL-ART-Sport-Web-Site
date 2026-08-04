@@ -27,7 +27,7 @@ export default function AboutPage() {
       <AboutStudio />
       <OurApproach imageSrc={p1}/>
       <Team />
-      <AboutPartners />
+      {/* <AboutPartners /> */}
       <AboutContact />
     </>
   );
