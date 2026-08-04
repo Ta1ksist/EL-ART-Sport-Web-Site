@@ -110,13 +110,15 @@
   margin: 0;
   padding: 0;
   display: grid;
-  gap: 0;
+  
+
+  background-color: #e1e2e3; 
+  gap: 1px;
 }
 
 .card {
-  background-color: var(--background, #ffffff);
+  background-color: #ffffff;
   padding: 2rem;
-  border-bottom: 1px solid var(--hairline, #e5e7eb);
   cursor: pointer;
 }
 
@@ -142,20 +144,7 @@
 @media (min-width: 640px) {
   .servicesGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .card {
-    border-bottom: 1px solid var(--hairline, #e5e7eb);
-    border-right: 1px solid var(--hairline, #e5e7eb);
-  }
-
-  .card:nth-child(2n) {
-    border-right: none;
-  }
-
-  .card:nth-child(4),
-  .card:nth-child(5) {
-    border-bottom: none;
+    gap: 1px; 
   }
 }
 
