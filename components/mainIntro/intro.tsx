@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./intro.module.css";
+import Link from "next/link";
 import { TEAM } from "@/lib/team";
 
 export default function Intro() {
@@ -44,6 +45,9 @@ export default function Intro() {
             <br/>
             от первой концепции до финальной сдачи объекта.
           </p>
+           <Link href="/AboutUs" className={styles.link}>
+            Подробнее о нас →
+          </Link>
         </div>
 
       </div>
